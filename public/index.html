@@ -1,0 +1,1641 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MAC Salon & Spa</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <meta name="title" content="Mac Salon & Spa" >
+    <meta name="description" content="Mac salon y spa">
+
+    <meta name="keywords" content="macsalon spa lima san miguel belleza">
+    <meta name="author" content="Qbit Solutions" >
+
+    <meta name="viewport" content="width=1024">
+    
+    <link rel="stylesheet" href="static/css/fonts/fonts.css">
+    <link rel="stylesheet" href="static/css/utils/normalize.css">
+    <link rel="stylesheet" href="static/css/utils/helpers.css">
+    <link rel="stylesheet" href="static/css/global.css">
+        
+    <link rel="stylesheet" href="static/js/plugins/jscrollpane/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="static/js/plugins/datepicker/datePicker.css" type="text/css">
+    <script src="//maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <!-- Include the heartcode canvasloader js file -->
+    <script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>
+    
+    <script src="static/js/libs/modernizr-2.5.3.min.js"></script>
+    <script src="static/js/libs/jquery-1.7.1.min.js"></script>
+    <script src="static/js/libs/underscore-min.js"></script>
+    <script src="static/js/libs/backbone-min.js"></script>
+    
+    <script src="static/js/plugins/ui/js/jquery-ui-1.8.20.custom.min.js"></script>
+    
+    <script src="static/js/plugins/datepicker/date.js"></script>
+    <script src="static/js/plugins/datepicker/date_pt-br.js"></script>
+    <script src="static/js/plugins/datepicker/jquery.datePicker.js"></script>
+    <script src="static/js/plugins/placeholder/placeholder_fix.js"></script>
+    <script src="static/js/plugins/maskedinput/jquery.maskedinput-1.3.min.js"></script>
+    <script src="static/js/plugins/easing/jquery.easing.1.3.js"></script>
+    <script src="static/js/plugins/smartresize/jquery.throttledresize.js"></script>
+    <script src="static/js/plugins/jscrollpane/jquery.mousewheel.js"></script>
+    <script src="static/js/plugins/jscrollpane/mwheelIntent.js"></script>
+    <script src="static/js/plugins/jscrollpane/jquery.jscrollpane.min.js"></script>
+    <script src="static/js/plugins/grayscaleClone/grayscaleClone.js"></script>
+    <script src="static/js/plugins/pajinate/jquery.pajinate.min.js"></script>
+    <script src="static/js/app/main.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <header id="header">
+        <div class="wrapper wrapper-logo">
+            <h1 id="logo-blend"><a href="#home/" class="page-link ir" title="Home">MAC SALON & SPA</a></h1>
+        </div>
+        <nav id="main-nav">
+            <ul class="clearfix nav">
+                <li class="acercadenosotros"><a href="#acercadenosotros/" class="page-link">ACERCA DE NOSOTROS</a></li>
+                <li class="macSalon">
+                    <a href="#">MAC SALON</a>
+                    <ul class="fade">
+                        <li><a href="#macsalon/fotos/" class="page-link page-link-fotos">FOTOS</a></li>
+                        <li><a href="#macsalon/servicios/" class="page-link">SERVICIOS</a></li>
+                        <li><a href="#macsalon/equipo/" class="page-link">EQUIPO</a></li>
+                    </ul>
+                </li>
+                <li class="macSpa">
+                    <a href="#">MAC SPA</a>
+                    <ul class="fade">
+                        <li><a href="#macspa/fotos/" class="page-link page-link-fotos">FOTOS</a></li>
+                        <li><a href="#macspa/servicios/" class="page-link">SERVICIOS</a></li>
+                        <li><a href="#macspa/equipo/" class="page-link">EQUIPO</a></li>
+                    </ul>
+                </li>
+               <!-- <li class="galeria"><a href="#galeria/" class="page-link page-link-galeria">GALERIA</a></li> -->
+                <li class="promociones"><a href="#promociones/" class="page-link">PROMOCIONES</a></li>
+                <li class="agendamento"><a href="#pre-agendamento/" class="page-link">RESERVAS</a></li>
+                <li class="blog"><a href="#blog/" class="page-link">BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="page-map" class="page-map animate">
+        <h2 class="page-title">Mapa de Localiza&ccedil;&atilde;o</h2>
+        <div id="map-container">
+            <div id="map-canvas">
+            </div>
+            <p id="map-close"><a href="#" class="ir" title="Fechar mapa">Fechar mapa</a></p>
+        </div>
+    </section>
+    
+    <div role="main" id="pages">
+        
+        <section id="page-acercadenosotros" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/servicos.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>            
+           
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>Acerca de Nosotros</span>
+                                </h2>    
+                                <div class="scroll">
+                                    <div class="clearfix">
+                                        <p>Lorem ipsum dolor sit amet, ne mel vide noster. Inani ridens prodesset est cu, cum et agam volutpat voluptaria, ex pri alia everti volumus. Sea ex lobortis adipiscing instructior, ad nec porro indoctum similique. Eam detraxit percipitur suscipiantur eu. Nec ne ubique ceteros accusata, ex exerci laudem qualisque mei, per erant iudicabit ad.</p>
+
+                                        <p>Posse tempor eu has, natum fugit mundi sed ad. Usu ei nonumy sanctus intellegebat, quem labore sea ei, sit ea prodesset argumentum theophrastus. Inimicus reformidans at nec. Velit inimicus honestatis eam ex. Legimus ponderum lobortis eos no. Eam tritani nusquam mediocritatem cu, ei mei dicam laoreet.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="page-macsalon-galeria" class="page mac-gallery">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/galeria.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>
+            <!--<div class="credito">
+                <p><span>FOTO: DEMIAN GOLOVATY</span></p>
+            </div>-->
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">                    
+                        <div class="white-container-inner">
+                            <div class="page_navigation clearfix"></div>
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>GALERIA</span>
+                                </h2>
+                                <p class="intro">Conheça de perto o incrível trabalho de nosso profissionais</p>
+                                <div class="no-scroll">
+                                    <ul class="image-list clearfix">
+                                        <!-- caso a thumb não tenha versão ampliada, use # no atributo href do link -->
+                                        <!-- use class  class="no-mr" sempre no li 4n (n>=0) -->
+                                        <li><a href="static/images/galeria/001.jpg"><img src="static/images/galeria/001_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 1"></a></li>
+                                        <li><a href="static/images/galeria/002.jpg"><img src="static/images/galeria/002_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 2"></a></li>
+                                        <li><a href="static/images/galeria/003.jpg"><img src="static/images/galeria/003_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 3"></a></li>
+                                        <li class="no-mr"><a href="static/images/galeria/004.jpg"><img src="static/images/galeria/004_thumb.png" alt="imagem 4" data-credito="Foto: Demian Golovaty"></a></li>
+                                        <li><a href="static/images/galeria/005.jpg"><img src="static/images/galeria/005_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 5"></a></li> 
+                                        <li><a href="static/images/galeria/006.jpg"><img src="static/images/galeria/006_thumb.png" data-credito="" alt="imagem 6"></a></li> 
+                                        <li><a href="static/images/galeria/007.jpg"><img src="static/images/galeria/007_thumb.png" data-credito="" alt="imagem 7"></a></li> 
+                                        <li><a href="static/images/galeria/008.jpg"><img src="static/images/galeria/008_thumb.png" data-credito="" alt="imagem 8"></a></li> 
+                                        <li><a href="static/images/galeria/009.jpg"><img src="static/images/galeria/009_thumb.png" data-credito="" alt="imagem 9"></a></li> 
+                                        <li><a href="static/images/galeria/010.jpg"><img src="static/images/galeria/010_thumb.png" data-credito="" alt="imagem 10"></a></li> 
+                                        <li><a href="#"><img src="static/images/galeria/default.png" alt="imagem 11" data-credito="Foto: Demian Golovaty"></a></li> 
+                                        <li><a href="#"><img src="static/images/galeria/default.png" alt="imagem 12" data-credito="Foto: Demian Golovaty"></a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="gallery-container">
+                <a href="#" class="gallery-nav prev">Anterior</a>                
+                <img class="gallery-image" src="static/images/global/pixel.gif" alt="">
+                <a href="#" class="gallery-nav next">Próximo</a>
+                <div class="gallery-detail">
+                    <span class="num-images"><span class="current">1</span>/<span class="total">12</span></span>
+                    <a href="#" class="ir gallery-close">Fechar</a>
+                </div>
+                <div class="gallery-creditos">
+                    <p></p>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="page-macsalon-fotos" class="page mac-gallery">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/fotos.jpg" alt="" class="background normal" />
+            <div class="background-overlay normal"></div>            
+            <div class="credito">
+                
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">                        
+                            <div class="page_navigation clearfix"></div>
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>FOTOS</span>
+                                </h2>
+                                <p class="intro">Fotos</p>
+                                
+
+                                <div class="no-scroll">
+                                    <ul class="image-list clearfix">
+                                        <!-- caso a thumb não tenha versão ampliada, use # no atributo href do link -->
+                                        <!-- use class  class="no-mr" sempre no li 4n (n>=0) -->
+                                        <li><a href="static/images/fotos/001.jpg"><img src="static/images/fotos/001_thumb.png" alt="imagem 1"></a></li>
+                                        <li><a href="static/images/fotos/002.jpg"><img src="static/images/fotos/002_thumb.png" alt="imagem 2"></a></li>
+                                        <li><a href="static/images/fotos/003.jpg"><img src="static/images/fotos/003_thumb.png" alt="imagem 3"></a></li>
+                                        <li class="no-mr"><a href="static/images/fotos/004.jpg"><img src="static/images/fotos/004_thumb.png" alt="imagem 4"></a></li>
+                                        <li><a href="static/images/fotos/005.jpg"><img src="static/images/fotos/005_thumb.png" alt="imagem 5"></a></li>
+                                        <li><a href="static/images/fotos/006.jpg"><img src="static/images/fotos/006_thumb.png" alt="imagem 6"></a></li>
+                                        <li><a href="static/images/fotos/007.jpg"><img src="static/images/fotos/007_thumb.png" alt="imagem 7"></a></li>
+                                        <li class="no-mr"><a href="static/images/fotos/008.jpg"><img src="static/images/fotos/008_thumb.png" alt="imagem 8"></a></li>
+                                        <li><a href="static/images/fotos/009.jpg"><img src="static/images/fotos/009_thumb.png" alt="imagem 9"></a></li>
+                                        <li><a href="static/images/fotos/010.jpg"><img src="static/images/fotos/010_thumb.png" alt="imagem 10"></a></li>
+                                        <li><a href="static/images/fotos/011.jpg"><img src="static/images/fotos/011_thumb.png" alt="imagem 11"></a></li>
+                                        <li class="no-mr"><a href="static/images/fotos/012.jpg"><img src="static/images/fotos/012_thumb.png" alt="imagem 12"></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/fotos_bw.jpg" alt="" class="background bw" />
+            <div class="background-overlay bw"></div>
+            
+            <div class="gallery-container">
+                <a href="#" class="gallery-nav prev">Anterior</a>                
+                <img class="gallery-image" src="static/images/global/pixel.gif" alt="">
+                <a href="#" class="gallery-nav next">Próximo</a>
+                <div class="gallery-detail">
+                    <span class="num-images"><span class="current">1</span>/<span class="total">12</span></span>
+                    <a href="#" class="ir gallery-close">Fechar</a>
+                </div>
+                <div class="gallery-creditos">
+                    <p></p>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="page-macsalon-servicios" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/servicos.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>            
+            
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>SERVICIOS</span>
+                                </h2>    
+                                <div class="scroll">
+                                    <div class="clearfix">
+
+                                        <div class="col">
+                                            <h3>Cabello</h3>
+                                            <ul>
+                                                <li>Extensiones</li>
+                                                <li>Cortes</li>
+                                            </ul>
+
+                                            <h3>Maquillaje</h3> 
+                                            <ul>
+                                                <li>Maquillaje Artistico</li>
+                                                <li>Servicio 2</li>
+                                                <li>Serviocio 3</li>
+                                            </ul>
+
+                                            <h3>Masajes</h3>
+                                            <ul>
+                                                <li>servicio 1</li>
+                                                <li>servicio 2</li>
+                                                <li>servicio 3</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col col-right">
+                                            <h3>Otros Servicios</h3>
+                                            <ul>
+                                                <li>Servicio 1</li>
+                                                <li>Servicio 2</li>
+                                                <li>Servicio 3</li>
+                                                <li>Servicio 4</li>
+                                                <li>Servicio 5</li>
+                                                <li>Servicio 6</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-macspa-galeria" class="page mac-gallery">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/galeria.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>
+            <!--<div class="credito">
+                <p><span>FOTO: DEMIAN GOLOVATY</span></p>
+            </div>-->
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">                    
+                        <div class="white-container-inner">
+                            <div class="page_navigation clearfix"></div>
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>GALERIA</span>
+                                </h2>
+                                <p class="intro">Conheça de perto o incrível trabalho de nosso profissionais</p>
+                                <div class="no-scroll">
+                                    <ul class="image-list clearfix">
+                                        <!-- caso a thumb não tenha versão ampliada, use # no atributo href do link -->
+                                        <!-- use class  class="no-mr" sempre no li 4n (n>=0) -->
+                                        <li><a href="static/images/galeria/001.jpg"><img src="static/images/galeria/001_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 1"></a></li>
+                                        <li><a href="static/images/galeria/002.jpg"><img src="static/images/galeria/002_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 2"></a></li>
+                                        <li><a href="static/images/galeria/003.jpg"><img src="static/images/galeria/003_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 3"></a></li>
+                                        <li class="no-mr"><a href="static/images/galeria/004.jpg"><img src="static/images/galeria/004_thumb.png" alt="imagem 4" data-credito="Foto: Demian Golovaty"></a></li>
+                                        <li><a href="static/images/galeria/005.jpg"><img src="static/images/galeria/005_thumb.png" data-credito="Foto: Demian Golovaty" alt="imagem 5"></a></li> 
+                                        <li><a href="static/images/galeria/006.jpg"><img src="static/images/galeria/006_thumb.png" data-credito="" alt="imagem 6"></a></li> 
+                                        <li><a href="static/images/galeria/007.jpg"><img src="static/images/galeria/007_thumb.png" data-credito="" alt="imagem 7"></a></li> 
+                                        <li><a href="static/images/galeria/008.jpg"><img src="static/images/galeria/008_thumb.png" data-credito="" alt="imagem 8"></a></li> 
+                                        <li><a href="static/images/galeria/009.jpg"><img src="static/images/galeria/009_thumb.png" data-credito="" alt="imagem 9"></a></li> 
+                                        <li><a href="static/images/galeria/010.jpg"><img src="static/images/galeria/010_thumb.png" data-credito="" alt="imagem 10"></a></li> 
+                                        <li><a href="#"><img src="static/images/galeria/default.png" alt="imagem 11" data-credito="Foto: Demian Golovaty"></a></li> 
+                                        <li><a href="#"><img src="static/images/galeria/default.png" alt="imagem 12" data-credito="Foto: Demian Golovaty"></a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="gallery-container">
+                <a href="#" class="gallery-nav prev">Anterior</a>                
+                <img class="gallery-image" src="static/images/global/pixel.gif" alt="">
+                <a href="#" class="gallery-nav next">Próximo</a>
+                <div class="gallery-detail">
+                    <span class="num-images"><span class="current">1</span>/<span class="total">12</span></span>
+                    <a href="#" class="ir gallery-close">Fechar</a>
+                </div>
+                <div class="gallery-creditos">
+                    <p></p>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="page-macspa-fotos" class="page mac-gallery">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/fotos.jpg" alt="" class="background normal" />
+            <div class="background-overlay normal"></div>            
+            
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">                        
+                            <div class="page_navigation clearfix"></div>
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>FOTOS</span>
+                                </h2>
+                                <p class="intro">Conheça em detalhes o espaço feito para o seu conforto</p>
+                                <p class="creditos">Fotos: Demian Golovaty</p>
+
+                                <div class="no-scroll">
+                                    <ul class="image-list clearfix">
+                                        <!-- caso a thumb não tenha versão ampliada, use # no atributo href do link -->
+                                        <!-- use class  class="no-mr" sempre no li 4n (n>=0) -->
+                                        <li><a href="static/images/fotos/001.jpg"><img src="static/images/fotos/001_thumb.png" alt="imagem 1"></a></li>
+                                        <li><a href="static/images/fotos/002.jpg"><img src="static/images/fotos/002_thumb.png" alt="imagem 2"></a></li>
+                                        <li><a href="static/images/fotos/003.jpg"><img src="static/images/fotos/003_thumb.png" alt="imagem 3"></a></li>
+                                        <li class="no-mr"><a href="static/images/fotos/004.jpg"><img src="static/images/fotos/004_thumb.png" alt="imagem 4"></a></li>
+                                        <li><a href="static/images/fotos/005.jpg"><img src="static/images/fotos/005_thumb.png" alt="imagem 5"></a></li>
+                                        <li><a href="static/images/fotos/006.jpg"><img src="static/images/fotos/006_thumb.png" alt="imagem 6"></a></li>
+                                        <li><a href="static/images/fotos/007.jpg"><img src="static/images/fotos/007_thumb.png" alt="imagem 7"></a></li>
+                                        <li class="no-mr"><a href="static/images/fotos/008.jpg"><img src="static/images/fotos/008_thumb.png" alt="imagem 8"></a></li>
+                                        <li><a href="static/images/fotos/009.jpg"><img src="static/images/fotos/009_thumb.png" alt="imagem 9"></a></li>
+                                        <li><a href="static/images/fotos/010.jpg"><img src="static/images/fotos/010_thumb.png" alt="imagem 10"></a></li>
+                                        <li><a href="static/images/fotos/011.jpg"><img src="static/images/fotos/011_thumb.png" alt="imagem 11"></a></li>
+                                        <li class="no-mr"><a href="static/images/fotos/012.jpg"><img src="static/images/fotos/012_thumb.png" alt="imagem 12"></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/fotos_bw.jpg" alt="" class="background bw" />
+            <div class="background-overlay bw"></div>
+            
+            <div class="gallery-container">
+                <a href="#" class="gallery-nav prev">Anterior</a>                
+                <img class="gallery-image" src="static/images/global/pixel.gif" alt="">
+                <a href="#" class="gallery-nav next">Próximo</a>
+                <div class="gallery-detail">
+                    <span class="num-images"><span class="current">1</span>/<span class="total">12</span></span>
+                    <a href="#" class="ir gallery-close">Fechar</a>
+                </div>
+                <div class="gallery-creditos">
+                    <p></p>
+                </div>
+            </div>       
+        </section>
+        
+        <section id="page-macspa-servicios" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/servicos.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>            
+            
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>SERVICIOS</span>
+                                </h2>    
+                                <div class="scroll">
+                                    <div class="clearfix">
+
+                                        <div class="col">
+                                            <h3>Cabello</h3>
+                                            <ul>
+                                                <li>Extensiones</li>
+                                                <li>Cortes</li>
+                                            </ul>
+
+                                            <h3>Maquillaje</h3> 
+                                            <ul>
+                                                <li>Maquillaje Artistico</li>
+                                                <li>Servicio 2</li>
+                                                <li>Serviocio 3</li>
+                                            </ul>
+
+                                            <h3>Masajes</h3>
+                                            <ul>
+                                                <li>servicio 1</li>
+                                                <li>servicio 2</li>
+                                                <li>servicio 3</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col col-right">
+                                            <h3>Otros Servicios</h3>
+                                            <ul>
+                                                <li>Servicio 1</li>
+                                                <li>Servicio 2</li>
+                                                <li>Servicio 3</li>
+                                                <li>Servicio 4</li>
+                                                <li>Servicio 5</li>
+                                                <li>Servicio 6</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="page-macsalon-equipo" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/equipe.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>            
+            
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">
+
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>EQUIPO</span>
+                                </h2>    
+                                <div class="scroll">
+                                    <ul class="profissionais clearfix">
+                                        
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Elton-Thadeu.png" alt="Elton Thadeu">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Elton Thadeu</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Maquiador</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Com uma vasta experiência em televisão e moda, Elton já fez de jornalismo a desfiles em Paris e Londres. A experiência em grandes lojas de departamentos internacionais (Selfridges e Harrod's), o fez despertar para a beleza das noivas, que hoje é uma de suas especialidades. A inspiração vem do dia a dia, das viagens, da moda, principalmente a europeia. "Acho importante conhecer todos os produtos e tecnologias, para na prática, acertar sempre, independente do perfil da cliente e sempre deixa-la feliz".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Fabio-Torquato.png" alt="Fabio Torquato">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Fabio Torquato</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Especializado em cores e cortes, Fabio Torquato atua como cabeleireiro desde os 14 anos. Depois de morar por dois anos e meio em Londres, volta ao Brasil cheio de novas ideias e pronto para fazer de suas clientes verdadeiras trend setters. Apaixonado por novas técnicas de luzes e clareamento, "Sun Kisses" e "Mechas de Transparência em Modo Free Hand" são suas realizações maiores. "Ouço a ideia da cliente e busco com ela o ponto ideal para a sua personalidade, fazemos o diagnóstico juntos".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        
+                                            
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Gisa-Araujo.png" alt="Gisa Araújo">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Gisa Araújo</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireira</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Gisa é responsável por grande parte dos loiros do MacSpa. Especialista em cor, ela busca referências na moda e faz releituras chiques e contemporâneas para cada cliente. Experiente em beleza de desfiles, como Alexandre Herchovitch, Fause Haten e Glória Coelho, ela usa a inspiração das passarelas para criar tons e cortes únicos, mas sempre se adaptando ao estilo de cada pessoa.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Marcio-Luz.png" alt="Marcio Luz">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Marcio Luz</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Dono de uma história de vida muito especial, Marcio saiu do interior da Bahia predestinado a brilhar no mundo da beleza. A experiência na barbearia do pai conquista hoje, diversos clientes homens, tanto para corte, como para barba. Além deles, uma gama de mulheres o segue por onde quer que ele vá. Dono de uma mão incrível, o cabelereiro ficou famoso por seus cortes. Marcio busca inspiração em revistas e atrizes internacionais. "Levo para a cliente o que há de mais moderno. Dou sugestões o mostro o que se está em alta".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Michael.png" alt="Michael Teixeira">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Michael Teixeira</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Bacharel em História da Moda, a paixão por cabelos nasceu ao longo do curso. Artista de vanguarda e versátil, Michael trabalha como cabeleireiro desde os 16 anos. Sua excelência são as cores. Cortes e penteados também não deixam a desejar. A criação é individual. "Observo cada detalhe da minha cliente e sei interpretar os estilos. Analiso roupas, acessórios e rotina, e adequo a moda ao estado de espírito da cliente".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Miro-Rodriguez.png" alt="Miró Rodriguez">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Miró Rodriguez</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>O desafio levou Miró a estudar corte e aprender o lado técnico da profissão.  Foi professor de cabeleireiros na maior academia do Brasil e faz carreira como criador de tendências. Há dez anos no mercado, compõe hoje, além da equipe do Blend, o time de designers da Alfaparf. Miró traz para as suas criações muita técnica, conceito e tendências internacionais que ainda nem foram vistas por aqui. "Busco reproduzir o que a cliente veio buscar, mas de maneira única, particular e precisa".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Paulo-Neto.png" alt="Paulo Neto">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Paulo Neto</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Ao lado de Eron Araújo há quatro anos, Paulo leva para a vida profissional muito do que aprendeu com o líder: interpretar a cliente e buscar referências na moda.  É adepto dos cabelos naturais e glamurosos, tanto corte quanto cores, e é expert quando o assunto é mega hair e finalizações, como escovas modeladas e penteados. "A cliente é o foco principal do meu trabalho".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                         <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Regina-Maciel.png" alt="Regina Maciel">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Regina Maciel</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireira</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>O namoro começou com a moda. A mãe modelista influenciou na profissão de cabeleireira, que ela assume há 20 anos. A sua maior referência na hora de criar é a cultura londrina e as revistas internacionais. Ligada em tons e cortes modernos, é especialista em loiros, inclusive os masculinos. Na sua cartela de clientes estão Waldemar Iódice, Pedro Lourenço e Tufi Duek. "Não tenho medo de mexer em loiros, vou ao ponto mais alto de clareamento".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        
+                                            
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Samuel-Jabes.png" alt="Samuel Jabes">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Samuel Jabes</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>A paixão por cabelos vem da infância, se aprimorar foi uma questão de tempo. Depois de fazer cursos e trabalhar em Londres, Paris, Copenhagen e Estados Unidos, Samuel é hoje um dos renomados profissionais do MacSpa. A experiência com outras culturas deixou seu olhar apurado para as tendências da moda, e esse é o seu forte. "Busco adaptar as tendências internacionais ao perfil das mulheres e homens brasileiros, que ainda é mais clássico".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Suzana-Galante.png" alt="Suzana Galante">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Suzana Galante</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Maquiadora</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>A carreira iniciada em 1999 é um acumulo de boas experiências. Profissional de um dos salões mais conceituados da cidade por 13 anos, Suzana é hoje, parte da equipe do Blend e assina como top beauty artist. A experiência em desfiles de nomes consagrados como Samuel Cirnansck, Fórum e Ricardo Almeida, a faz buscar inspiração na moda e na naturalidade da beleza de cada um. Seu diferencial está na sobrancelha "efeito botox" e na valorização da beleza natural da mulher. "Busco ressaltar o que ela tem de melhor e surpreender sempre".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Thaisa-Araujo.png" alt="Thaísa Araújo">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Thaísa Araújo</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Maquiadora</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>A maquiagem vista como arte, é a principal referência de seu trabalho. Thaísa encontra no make up, a união de duas grandes paixões: moda e criação. O namoro da profissão, que começou com a moda, hoje reflete em seus makes cheios de cores, tendências, contrastes e conceito. "A inspiração vem de dentro".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Thiago-Vieira.png" alt="Thiago Vieira">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Thiago Vieira</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Ele é de Recife, a inspiração de Hollywood. Certo de que escolheu a profissão da sua vida, Thiago é especialista em coloração e um apaixonado pelas musas internacionais. Entende que toda mulher quer ser desejada, e é exatamente isso que ele promete às suas clientes. Seu objetivo é transformar o humor de quem passa pela sua cadeira e passar a fazer parte da vida de suas clientes. "Me inspiro em atrizes e compartilho as referências com as minhas clientes. Sei que elas também podem ser divas".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        
+                                            
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Ulisses.png" alt="Ulisses S.J.">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Ulisses S.J.</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Natural de Floripa, Ulisses caiu nas graças da redatora-chefe da revista Vogue, Mônica Salgado, pouco depois da chegada em São Paulo. A partir daí, o cabeleireiro tem sido requisitado por sua especialidade como colorista. "Uso a minha sensibilidade para indicar algo que a cliente vá gostar. Minha meta é surpreender, dificilmente elas não gostam".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Eron-Araujo.png" alt="Eron Araújo">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Eron Araújo</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Sócio</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Após 24 anos trabalhando como o cabeleireiro mais requisitado dos melhores salões de São Paulo, Eron investe agora, em seu próprio negócio. Pensando em unir o que há de melhor no mercado, tanto em nível de profissionais, como de serviços e produtos, ele assume a diretoria técnica do Blend e cuida de perto do seu alto escalão de cabeleireiros. O objetivo é que cada cliente seja especial e saia sempre realizada do salão. Cada dia mais popular no mundo da beleza e das celebridades, Eron atende clientes como Thereza Collor, Marina Mantega, Ana Luiza Castro, Cinthia Benini, entre outras.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div> 
+                                            </div>
+                                            <a class="mais-descricao"><strong>+ mais</strong></a>
+                                        </div>
+                                    </li>
+
+                                    <li class="profissional clearfix">
+                                        <div class="image">
+                                            <img src="static/images/equipe/Guido.png" alt="Guido Pavan Neto">
+                                        </div>
+                                        <div class="informacao">
+                                            <h3>Guido Pavan Neto</h3>
+                                            <ul class="contato">
+                                                <li><strong>Sócio</strong></li>
+
+                                            </ul>
+                                            <div class="descricao"><div>Há 15 anos empresário do ramo têxtil, Guido Pavan Neto, viu na beleza uma grande oportunidade para investir o seu expertise como administrador. Visionário desde sempre, aos 23 anos abriu sua primeira empresa. De lá pra cá, vem aprimorando os negócios, cada dia mais focados no público de classe alta.
+                                                Dono da fábrica de lingerie GCI Têxtil, detentora da marca Duo Pink, Guido hoje, assume também a diretoria financeira do Blend e cuida do espaço para que haja extrema qualidade e excelência em todos os serviços prestados no salão.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Larissa-Zayat.png" alt="Larissa Zayat">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Larissa Zayat</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Sócia</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Vaidosa desde a infância, a empresária Larissa Zayat sonhava ter o seu próprio salão de beleza. Desejo realizado em 2009, com a inauguração do Spa Della Rosa, case de sucesso, surgiu a ideia de aprimorar-se na área. Nasce, então, o MacSpa. 
+                                                    Diretora operacional, Larissa usa sua experiência para coordenar a equipe diferenciada, do novo e renomado salão do Itaim.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div> 
+                                                </div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-macspa-equipo" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/equipe.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>            
+            
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">
+
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>EQUIPE</span>
+                                </h2>    
+                                <div class="scroll">
+                                    <ul class="profissionais clearfix">
+                                        
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Elton-Thadeu.png" alt="Elton Thadeu">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Elton Thadeu</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Maquiador</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Com uma vasta experiência em televisão e moda, Elton já fez de jornalismo a desfiles em Paris e Londres. A experiência em grandes lojas de departamentos internacionais (Selfridges e Harrod's), o fez despertar para a beleza das noivas, que hoje é uma de suas especialidades. A inspiração vem do dia a dia, das viagens, da moda, principalmente a europeia. "Acho importante conhecer todos os produtos e tecnologias, para na prática, acertar sempre, independente do perfil da cliente e sempre deixa-la feliz".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Fabio-Torquato.png" alt="Fabio Torquato">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Fabio Torquato</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Especializado em cores e cortes, Fabio Torquato atua como cabeleireiro desde os 14 anos. Depois de morar por dois anos e meio em Londres, volta ao Brasil cheio de novas ideias e pronto para fazer de suas clientes verdadeiras trend setters. Apaixonado por novas técnicas de luzes e clareamento, "Sun Kisses" e "Mechas de Transparência em Modo Free Hand" são suas realizações maiores. "Ouço a ideia da cliente e busco com ela o ponto ideal para a sua personalidade, fazemos o diagnóstico juntos".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        
+                                            
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Gisa-Araujo.png" alt="Gisa Araújo">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Gisa Araújo</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireira</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Gisa é responsável por grande parte dos loiros do MacSpa. Especialista em cor, ela busca referências na moda e faz releituras chiques e contemporâneas para cada cliente. Experiente em beleza de desfiles, como Alexandre Herchovitch, Fause Haten e Glória Coelho, ela usa a inspiração das passarelas para criar tons e cortes únicos, mas sempre se adaptando ao estilo de cada pessoa.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Marcio-Luz.png" alt="Marcio Luz">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Marcio Luz</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Dono de uma história de vida muito especial, Marcio saiu do interior da Bahia predestinado a brilhar no mundo da beleza. A experiência na barbearia do pai conquista hoje, diversos clientes homens, tanto para corte, como para barba. Além deles, uma gama de mulheres o segue por onde quer que ele vá. Dono de uma mão incrível, o cabelereiro ficou famoso por seus cortes. Marcio busca inspiração em revistas e atrizes internacionais. "Levo para a cliente o que há de mais moderno. Dou sugestões o mostro o que se está em alta".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Michael.png" alt="Michael Teixeira">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Michael Teixeira</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Bacharel em História da Moda, a paixão por cabelos nasceu ao longo do curso. Artista de vanguarda e versátil, Michael trabalha como cabeleireiro desde os 16 anos. Sua excelência são as cores. Cortes e penteados também não deixam a desejar. A criação é individual. "Observo cada detalhe da minha cliente e sei interpretar os estilos. Analiso roupas, acessórios e rotina, e adequo a moda ao estado de espírito da cliente".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Miro-Rodriguez.png" alt="Miró Rodriguez">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Miró Rodriguez</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>O desafio levou Miró a estudar corte e aprender o lado técnico da profissão.  Foi professor de cabeleireiros na maior academia do Brasil e faz carreira como criador de tendências. Há dez anos no mercado, compõe hoje, além da equipe do Blend, o time de designers da Alfaparf. Miró traz para as suas criações muita técnica, conceito e tendências internacionais que ainda nem foram vistas por aqui. "Busco reproduzir o que a cliente veio buscar, mas de maneira única, particular e precisa".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Paulo-Neto.png" alt="Paulo Neto">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Paulo Neto</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Ao lado de Eron Araújo há quatro anos, Paulo leva para a vida profissional muito do que aprendeu com o líder: interpretar a cliente e buscar referências na moda.  É adepto dos cabelos naturais e glamurosos, tanto corte quanto cores, e é expert quando o assunto é mega hair e finalizações, como escovas modeladas e penteados. "A cliente é o foco principal do meu trabalho".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                         <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Regina-Maciel.png" alt="Regina Maciel">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Regina Maciel</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireira</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>O namoro começou com a moda. A mãe modelista influenciou na profissão de cabeleireira, que ela assume há 20 anos. A sua maior referência na hora de criar é a cultura londrina e as revistas internacionais. Ligada em tons e cortes modernos, é especialista em loiros, inclusive os masculinos. Na sua cartela de clientes estão Waldemar Iódice, Pedro Lourenço e Tufi Duek. "Não tenho medo de mexer em loiros, vou ao ponto mais alto de clareamento".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        
+                                            
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Samuel-Jabes.png" alt="Samuel Jabes">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Samuel Jabes</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>A paixão por cabelos vem da infância, se aprimorar foi uma questão de tempo. Depois de fazer cursos e trabalhar em Londres, Paris, Copenhagen e Estados Unidos, Samuel é hoje um dos renomados profissionais do MacSpa. A experiência com outras culturas deixou seu olhar apurado para as tendências da moda, e esse é o seu forte. "Busco adaptar as tendências internacionais ao perfil das mulheres e homens brasileiros, que ainda é mais clássico".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Suzana-Galante.png" alt="Suzana Galante">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Suzana Galante</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Maquiadora</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>A carreira iniciada em 1999 é um acumulo de boas experiências. Profissional de um dos salões mais conceituados da cidade por 13 anos, Suzana é hoje, parte da equipe do Blend e assina como top beauty artist. A experiência em desfiles de nomes consagrados como Samuel Cirnansck, Fórum e Ricardo Almeida, a faz buscar inspiração na moda e na naturalidade da beleza de cada um. Seu diferencial está na sobrancelha "efeito botox" e na valorização da beleza natural da mulher. "Busco ressaltar o que ela tem de melhor e surpreender sempre".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Thaisa-Araujo.png" alt="Thaísa Araújo">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Thaísa Araújo</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Maquiadora</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>A maquiagem vista como arte, é a principal referência de seu trabalho. Thaísa encontra no make up, a união de duas grandes paixões: moda e criação. O namoro da profissão, que começou com a moda, hoje reflete em seus makes cheios de cores, tendências, contrastes e conceito. "A inspiração vem de dentro".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Thiago-Vieira.png" alt="Thiago Vieira">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Thiago Vieira</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Ele é de Recife, a inspiração de Hollywood. Certo de que escolheu a profissão da sua vida, Thiago é especialista em coloração e um apaixonado pelas musas internacionais. Entende que toda mulher quer ser desejada, e é exatamente isso que ele promete às suas clientes. Seu objetivo é transformar o humor de quem passa pela sua cadeira e passar a fazer parte da vida de suas clientes. "Me inspiro em atrizes e compartilho as referências com as minhas clientes. Sei que elas também podem ser divas".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+                                        
+                                        
+                                            
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Ulisses.png" alt="Ulisses S.J.">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Ulisses S.J.</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Cabeleireiro</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Natural de Floripa, Ulisses caiu nas graças da redatora-chefe da revista Vogue, Mônica Salgado, pouco depois da chegada em São Paulo. A partir daí, o cabeleireiro tem sido requisitado por sua especialidade como colorista. "Uso a minha sensibilidade para indicar algo que a cliente vá gostar. Minha meta é surpreender, dificilmente elas não gostam".<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Eron-Araujo.png" alt="Eron Araújo">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Eron Araújo</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Sócio</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Após 24 anos trabalhando como o cabeleireiro mais requisitado dos melhores salões de São Paulo, Eron investe agora, em seu próprio negócio. Pensando em unir o que há de melhor no mercado, tanto em nível de profissionais, como de serviços e produtos, ele assume a diretoria técnica do Blend e cuida de perto do seu alto escalão de cabeleireiros. O objetivo é que cada cliente seja especial e saia sempre realizada do salão. Cada dia mais popular no mundo da beleza e das celebridades, Eron atende clientes como Thereza Collor, Marina Mantega, Ana Luiza Castro, Cinthia Benini, entre outras.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div> 
+                                            </div>
+                                            <a class="mais-descricao"><strong>+ mais</strong></a>
+                                        </div>
+                                    </li>
+
+                                    <li class="profissional clearfix">
+                                        <div class="image">
+                                            <img src="static/images/equipe/Guido.png" alt="Guido Pavan Neto">
+                                        </div>
+                                        <div class="informacao">
+                                            <h3>Guido Pavan Neto</h3>
+                                            <ul class="contato">
+                                                <li><strong>Sócio</strong></li>
+
+                                            </ul>
+                                            <div class="descricao"><div>Há 15 anos empresário do ramo têxtil, Guido Pavan Neto, viu na beleza uma grande oportunidade para investir o seu expertise como administrador. Visionário desde sempre, aos 23 anos abriu sua primeira empresa. De lá pra cá, vem aprimorando os negócios, cada dia mais focados no público de classe alta.
+                                                Dono da fábrica de lingerie GCI Têxtil, detentora da marca Duo Pink, Guido hoje, assume também a diretoria financeira do Blend e cuida do espaço para que haja extrema qualidade e excelência em todos os serviços prestados no salão.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div></div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+                                        <li class="profissional clearfix">
+                                            <div class="image">
+                                                <img src="static/images/equipe/Larissa-Zayat.png" alt="Larissa Zayat">
+                                            </div>
+                                            <div class="informacao">
+                                                <h3>Larissa Zayat</h3>
+                                                <ul class="contato">
+                                                    <li><strong>Sócia</strong></li>
+
+                                                </ul>
+                                                <div class="descricao"><div>Vaidosa desde a infância, a empresária Larissa Zayat sonhava ter o seu próprio salão de beleza. Desejo realizado em 2009, com a inauguração do Spa Della Rosa, case de sucesso, surgiu a ideia de aprimorar-se na área. Nasce, então, o MacSpa. 
+                                                    Diretora operacional, Larissa usa sua experiência para coordenar a equipe diferenciada, do novo e renomado salão do Itaim.<br/><a class="menos-descricao"><img src="static/images/global/gallery_close_button.gif" alt="fechar" title="fechar" /></a><div class="linha-picotada"></div></div> 
+                                                </div>
+                                                <a class="mais-descricao"><strong>+ mais</strong></a>
+                                            </div>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="page-eventos" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/eventos.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>            
+            <div class="credito">
+                <p><span>FOTO: DEMIAN GOLOVATY</span></p>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="cols clearfix">
+                        <div class="intro">
+                            <span>&nbsp;No Blend, seu dia é único <br>e &nbsp;especial. Contamos com<br> &nbsp;diferentes planos e pacotes<br> &nbsp;que atendem seus desejos<br> e &nbsp;necessidades. Seu sonho<br> &nbsp;exclusivo vira realidade!</span>
+                        </div>
+                        <div class="white-container">
+                            <div class="white-container-inner">
+                                <div class="text">
+
+                                    <h2 class="title">
+                                        <span>PACOTES E EVENTOS PERSONALIZADOS</span>
+                                    </h2>
+
+                                    <div class="scroll">
+                                        <ul>
+                                            <li>
+                                                <h3>Dia da Noiva</h3>
+                                                <p>Serviços exclusivos para deixá-la mais bela e deslumbrante neste dia tão especial, reunindo tecnologia e profissionais de ponta para melhor atendê-la. Tudo estrategicamente pensado para seu conforto. </p>
+                                            </li>
+
+                                            <li>
+                                                <h3>Day Spa</h3>
+                                                <p>Pacotes de 3 a 8 horas, com tratamento de estética facial e corporal para o seu bem-estar.</p>
+                                            </li>
+
+                                            <li>
+                                                <h3>Spa Hour</h3>
+                                                <p>Pacotes de 30 minutos a 1 hora, com tratamento de estética facial e corporal para o seu bem-estar.</p>
+                                            </li>
+
+                                            <li>
+                                                <h3>Teen Special Day</h3>
+                                                <p>Um dia incrível onde você e suas amigas podem comemorar sendo paparicadas com tratamentos de beleza e cupcakes.</p>
+                                            </li>
+
+                                            <li class="last">
+                                                <h3>Gift Cards</h3>
+                                                <p>Proporcione momentos de bem-estar com um presente original para quem você tanto gosta.</p>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page-promociones" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/servicos.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>            
+           
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <div class="white-container-inner">
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>Promociones</span>
+                                </h2>    
+                                <div class="scroll">
+                                    <div class="clearfix">
+                                        <p>aqui van las promociones</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-preagendamento" class="page">
+            <img src="static/images/global/blank.gif" data-src="static/images/backgrounds/preagendamento.jpg" alt="" class="background" />
+            <div class="background-overlay"></div>
+            
+            <div class="wrapper">
+                <div class="wrapper-slide">
+                    <div class="white-container">
+                        <form id="form-pre-agendamento">
+                        <div class="white-container-inner">
+                            <p id="mensagem-obrigatorio" class="mensagem-obrigatorio"><span>PREENCHIMENTO OBRIGATÓRIO</span></p>
+
+                            <div class="text">
+                                <h2 class="title">
+                                    <span>RESERVA</span>
+                                </h2>
+                                <p class="intro">Puede realizar su reserva en línea llenando el siguiente formulario</p>
+                                <div class="scroll scroll-form">
+                                     <div id="mensagem-sucesso" class="form-success">
+                                        <div class="form-success-msg">
+                                            <span>RESERVA ENVIADA CON ÉXITO! EN SEGUIDA NOS PONDREMOS EN CONTACTO CON USTED.</span>
+                                        </div>
+                                        <li class="form-row submit-row clearfix">
+                                             <input type="reset" id="button_voltar" value="VOLTAR" onClick="voltaFormulario()">
+                                        </li>
+                                    </div>
+                                    <ul id="formulario-pre-agendamento" class="form-fields">
+                                        <li class="form-row clearfix">
+
+                                            <input type="text" id="nome" name="nome" placeholder="nome completo" class="nome">
+                                        </li>
+
+                                        <li class="form-row clearfix">
+                                            <input type="text" id="telefone_celular" name="telefone_celular" placeholder="tel celular" class="fone vertical-separator">
+                                            <input type="text" id="telefone_fixo" name="telefone_fixo" placeholder="tel fixo" class="fone  vertical-separator">
+                                            <input type="text" id="telefone_outro" name="telefone_outro" placeholder="outro" class="fone">                                    
+                                        </li>
+
+                                        <li class="form-row clearfix">
+                                            <input type="text" id="email" name="email" class="nome" placeholder="e-mail">
+                                        </li>
+
+                                        <li class="form-row clearfix">
+                                            <label class="label label-datepicker">día y hora</label>
+                                            <a href="#" class="ir show-calendar">Calendário</a>
+                                            <input type="text" name="data" class="data" placeholder="( dd / mm / aaaa )" id="datepicker-1">
+                                            <input type="text" id="hora" name="hora" class="hora" placeholder="( 00:00 )">
+                                        </li>
+
+                                        <li class="form-row clearfix">
+                                            <label class="label label-datepicker">dia e hor&aacute;rio opcionais</label>
+                                            <a href="#" class="ir show-calendar">Calendário</a>
+                                            <input type="text" name="data_opt" class="data" placeholder="( dd / mm / aaaa )"  id="datepicker-2">
+                                            <input type="text" id="hora_opt" name="hora_opt" class="hora" placeholder="( 00:00 )">                                        
+                                        </li>
+
+                                        <li class="form-row clearfix">
+                                            <a href="#" class="label more" id="button-servicos"><span>serviços desejados</span></a>
+                                            <input type="text" name="servicos-selecionados" value="" id="servicos-selecionados">
+                                        </li>
+
+                                        <li class="form-row clearfix">
+                                            <a href="#" class="label more" id="button-profissionais"><span>profissionais de sua preferência</span></a>
+                                            <input type="text" name="profissionais-selecionados" value="" id="profissionais-selecionados">
+                                        </li>
+
+                                        <li class="form-row clearfix">
+                                            <textarea id="comentario" name="comentario" placeholder="coment&aacute;rios e observa&ccedil;&otilde;es"></textarea>
+                                        </li>
+
+                                        <li class="form-row submit-row clearfix">
+                                            <input type="button" id="button_enviar" value="ENVIAR" onClick="enviaPreAgendamento();">
+                                            <input type="button" id="button_limpar" value="LIMPAR" class="mR2" onClick="limpaFormulario();">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <div class="form-options" id="form-options-servicos">
+
+                            <div class="form-options-content">
+
+                                <div class="scroll">
+                                    <h3 class="form-options-title"><span>Cabelo</span></h3>
+                                    <div class="options-cols clearfix">
+
+                                        <ul class="options">
+                                            <li><input type="checkbox" value="" id="id_rd_1"><label for="id_rd_1">Alfa I. </label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_2"><label for="id_rd_2">Ampola</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_3"><label for="id_rd_3">Aplicação Vitamina C</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_4"><label for="id_rd_4">Balayage</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_5"><label for="id_rd_5">Blonde Shine Com Escova </label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_6"><label for="id_rd_6">C P R Trat.</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_7"><label for="id_rd_7">Cauteriz. Molec. C</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_8"><label for="id_rd_8">Chronologiste</label></li>                                       <li><input type="checkbox" value="" id="id_rd_9"><label for="id_rd_9">Coloração</label></li>                                       <li><input type="checkbox" value="" id="id_rd_10"><label for="id_rd_10">Corte Masc. + Tratamento </label></li>                                       <li><input type="checkbox" value="" id="id_rd_11"><label for="id_rd_11">Couro Cab. Red </label></li>                                       <li><input type="checkbox" value="" id="id_rd_12"><label for="id_rd_12">D. Stress C. Redk </label></li>                                       <li><input type="checkbox" value="" id="id_rd_13"><label for="id_rd_13">Efeito Ultra L.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_14"><label for="id_rd_14">Escova</label></li>
+                                           <li><input type="checkbox" value="" id="id_rd_15"><label for="id_rd_15">Escova Cationica Gloss</label></li>
+                                           <li><input type="checkbox" value="" id="id_rd_16"><label for="id_rd_16">Escova de Mega Hair</label></li>                                       <li><input type="checkbox" value="" id="id_rd_17"><label for="id_rd_17">Escova Unique Shine</label></li>                                       <li><input type="checkbox" value="" id="id_rd_18"><label for="id_rd_18">Hidratação Reconstr</label></li>                                       <li><input type="checkbox" value="" id="id_rd_19"><label for="id_rd_19">Hiper Nutrição </label></li>                                       <li><input type="checkbox" value="" id="id_rd_20"><label for="id_rd_20">Inj. Reconst. Molec.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_21"><label for="id_rd_21">Lp Bio</label></li>
+                                           <li><input type="checkbox" value="" id="id_rd_22"><label for="id_rd_22">Mega Hair</label></li>                                       <li><input type="checkbox" value="" id="id_rd_23"><label for="id_rd_23">Penteado</label></li>                                       <li><input type="checkbox" value="" id="id_rd_24"><label for="id_rd_24">Plastica Capilar</label></li>                                       <li><input type="checkbox" value="" id="id_rd_25"><label for="id_rd_25">Plastica Capilar Sem Escova</label></li>                                       <li><input type="checkbox" value="" id="id_rd_26"><label for="id_rd_26">Reconstrução Plus</label></li>                                       <li><input type="checkbox" value="" id="id_rd_27"><label for="id_rd_27">Reflexo</label></li>                                       <li><input type="checkbox" value="" id="id_rd_28"><label for="id_rd_28">Retoque Tintura</label></li>                                       <li><input type="checkbox" value="" id="id_rd_29"><label for="id_rd_29">S. O. S. Redken</label></li>                                       <li><input type="checkbox" value="" id="id_rd_30"><label for="id_rd_30">Slimming Capilar</label></li>                                       <li><input type="checkbox" value="" id="id_rd_31"><label for="id_rd_31">Therm Blindagem Capi</label></li>                                       <li><input type="checkbox" value="" id="id_rd_32"><label for="id_rd_32">Time Reset</label></li>                                       <li><input type="checkbox" value="" id="id_rd_33"><label for="id_rd_33">Trast. Rej. Premium K</label></li>                                       <li><input type="checkbox" value="" id="id_rd_34"><label for="id_rd_34">Trat. Hidracl. Redken</label></li>                                       <li><input type="checkbox" value="" id="id_rd_35"><label for="id_rd_35">Trat. Oles. Couro C.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_36"><label for="id_rd_36">Trat. Potencializador</label></li>                                       <li><input type="checkbox" value="" id="id_rd_37"><label for="id_rd_37">Trat. Time Reset de Luxe</label></li>                                       <li><input type="checkbox" value="" id="id_rd_38"><label for="id_rd_38">Tratamento</label></li>                                       <li><input type="checkbox" value="" id="id_rd_39"><label for="id_rd_39">Tratamento Pro</label></li>                                       <li><input type="checkbox" value="" id="id_rd_40"><label for="id_rd_40">Tratamento Recarga</label></li>                                       
+
+                                        </ul>
+
+                                        <ul class="options options-right">
+                                            <li><input type="checkbox" value="" id="id_rd_41"> <label for="id_rd_41">Alisamento</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_42"><label for="id_rd_42">Aplicação de Produto</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_43"><label for="id_rd_43">Baby Liss</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_44"><label for="id_rd_44">Blindagem Capi</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_45"><label for="id_rd_45">Blonde Shine Plus</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_46"><label for="id_rd_46">Carbo Recharge for Man </label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_47"><label for="id_rd_47">Color Gloss</label></li>                                       <li><input type="checkbox" value="" id="id_rd_48"><label for="id_rd_48">Corte Feminino</label></li>                                       <li><input type="checkbox" value="" id="id_rd_49"><label for="id_rd_49">Corte Masculino</label></li>                                       <li><input type="checkbox" value="" id="id_rd_50"><label for="id_rd_50">Cromatonalização</label></li>                                       <li><input type="checkbox" value="" id="id_rd_51"><label for="id_rd_51">Decapagem</label></li>                                       <li><input type="checkbox" value="" id="id_rd_52"><label for="id_rd_52">Esc. Z. Frizz</label></li>                                       <li><input type="checkbox" value="" id="id_rd_53"><label for="id_rd_53">Escova Cationica</label></li>                                       <li><input type="checkbox" value="" id="id_rd_54"><label for="id_rd_54">Escova de Bril Loreal</label></li>                                       <li><input type="checkbox" value="" id="id_rd_55"><label for="id_rd_55">Escova Hidronut.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_56"><label for="id_rd_56">Henna Importada</label></li>                                       <li><input type="checkbox" value="" id="id_rd_57"><label for="id_rd_57">Hidratonalização</label></li>                                       <li><input type="checkbox" value="" id="id_rd_58"><label for="id_rd_58">Homme</label></li>
+                                           <li><input type="checkbox" value="" id="id_rd_59"><label for="id_rd_59">Kerabiotic</label></li>                                       <li><input type="checkbox" value="" id="id_rd_60"><label for="id_rd_60">Mascara de Trat</label></li>                                       <li><input type="checkbox" value="" id="id_rd_61"><label for="id_rd_61">Mousse de Choc</label></li>                                       <li><input type="checkbox" value="" id="id_rd_62"><label for="id_rd_62">Permanente</label></li>                                       <li><input type="checkbox" value="" id="id_rd_63"><label for="id_rd_63">Plastica Capilar Com Escova</label></li>                                       <li><input type="checkbox" value="" id="id_rd_64"><label for="id_rd_64">Reconstrução</label></li>                                       <li><input type="checkbox" value="" id="id_rd_65"><label for="id_rd_65">Red Volume </label></li>                                       <li><input type="checkbox" value="" id="id_rd_66"><label for="id_rd_66">Relaxamento</label></li>                                       <li><input type="checkbox" value="" id="id_rd_67"><label for="id_rd_67">Ritual K </label></li>                                       <li><input type="checkbox" value="" id="id_rd_68"><label for="id_rd_68">Secagem</label></li>                                       <li><input type="checkbox" value="" id="id_rd_69"><label for="id_rd_69">T. I.</label></li>
+                                           <li><input type="checkbox" value="" id="id_rd_70"><label for="id_rd_70">Tintura</label></li>
+                                           <li><input type="checkbox" value="" id="id_rd_71"><label for="id_rd_71">Trat Esc Th Repair</label></li>                                       <li><input type="checkbox" value="" id="id_rd_72"><label for="id_rd_72">Trat. Nutribal. Redken</label></li>                                       <li><input type="checkbox" value="" id="id_rd_73"><label for="id_rd_73">Trat. Peeling Capilar</label></li>                                       <li><input type="checkbox" value="" id="id_rd_74"><label for="id_rd_74">Trat. Redutor de Vol</label></li>                                       <li><input type="checkbox" value="" id="id_rd_75"><label for="id_rd_75">Trat. Volumorphose</label></li>                                       <li><input type="checkbox" value="" id="id_rd_76"><label for="id_rd_76">Tratamento Polimento</label></li>                                       <li><input type="checkbox" value="" id="id_rd_77"><label for="id_rd_77">Queratinização</label></li>                                       <li><input type="checkbox" value="" id="id_rd_78"><label for="id_rd_78">Tratamento Redken</label></li>                                      <li><input type="checkbox" value="" id="id_rd_79"><label for="id_rd_79">Ultra Shine</label></li>                              
+                                        </ul>
+                                    </div>
+
+                                    <h3 class="form-options-title"><span>Maquiagem</span></h3>
+                                    <div class="options-cols clearfix">
+                                        <ul class="options">
+                                            
+                                            <li><input type="checkbox" value="" id="id2_rd_1"><label for="id2_rd_1">Maquiagem </label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_2"><label for="id2_rd_2">Design de Sobrancelhas</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_3"><label for="id2_rd_3">Maq Definitiva Sobrancelha</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_4"><label for="id2_rd_4">Maquiagem Com Cílios</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_5"><label for="id2_rd_5">Olhos</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_6"><label for="id2_rd_6">Permanente de Cílios</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_7"><label for="id2_rd_7">Tintura de Cílios</label></li>
+                                        </ul>
+
+                                        <ul class="options options-right">
+                                            <li><input type="checkbox" value="" id="id2_rd_9"> <label for="id2_rd_9">Colocação Cílios Sem</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_10"><label for="id2_rd_10">Curso Auto-maquiagem</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_11"><label for="id2_rd_11">Maq Definitiva Boca</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_12"><label for="id2_rd_12">Maquiagem Artistica</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_13"><label for="id2_rd_13">Maquiagem Maq Definitiva</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_14"><label for="id2_rd_14">Maquiagem Sem Cílios</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_15"><label for="id2_rd_15">Sobrancelhas Com Henna</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_16"><label for="id2_rd_16">Tintura de Sobrancelhas</label></li>
+                                        </ul>
+                                    </div>
+
+                                    <h3 class="form-options-title"><span>Manicure</span></h3>
+                                    <div class="options-cols clearfix">
+                                        <ul class="options">
+                                            <li><input type="checkbox" value="" id="id3_rd_1"><label for="id3_rd_1">Esfoliação Manicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_2"><label for="id3_rd_2">Hidração Profunda Com Parafina Pedicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_3"><label for="id3_rd_3">Manicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_4"><label for="id3_rd_4">Manicure e Pedicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_5"><label for="id3_rd_5">Manutenção Unha de Gel</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_6"><label for="id3_rd_6">Pedicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_7"><label for="id3_rd_7">Pedicure Francezinha</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_8"><label for="id3_rd_8">Só Esmalte Manicure </label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_9"><label for="id3_rd_9">Só Esmalte Pedicure Francesinha</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_10"><label for="id3_rd_10">Spa dos Pés</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_11"><label for="id3_rd_11">Unha de Gel</label></li>
+                                        </ul>
+
+                                        <ul class="options options-right">
+                                            <li><input type="checkbox" value="" id="id3_rd_12"> <label for="id3_rd_12">Esfoliação Pedicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_13"><label for="id3_rd_13">Hidratação Profunda Com Parafina Manicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_14"><label for="id3_rd_14">Manicure Decorada</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_15"><label for="id3_rd_15">Manicure Francezinha</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_16"><label for="id3_rd_16">Manutenção Unha Postiça</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_17"><label for="id3_rd_17">Pedicure Decorada</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_18"><label for="id3_rd_18">Só Esmalte Francesinha</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_19"><label for="id3_rd_19">Só Esmalte Pedicure</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_20"><label for="id3_rd_20">Spa das Mãos</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_21"><label for="id3_rd_21">Unha de Acrigel </label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_22"><label for="id3_rd_22">Unha Postiça</label></li>
+                                        </ul>
+                                    </div>
+
+                                    <h3 class="form-options-title"><span>Tratamentos Estéticos</span></h3>
+                                    <div class="options-cols clearfix">
+                                        <ul class="options">
+                                            <li><input type="checkbox" value="" id="id4_rd_1"><label for="id4_rd_1">Bambuterapia</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_2"><label for="id4_rd_2">Banho Ofuro</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_3"><label for="id4_rd_3">Drenagem Facial Pós Operatória</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_4"><label for="id4_rd_4">Drenagem Linfática Gestante</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_5"><label for="id4_rd_5">Drenagem Linfática Pós Operatória e Gestante</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_6"><label for="id4_rd_6">Esfoliação Corporal</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_7"><label for="id4_rd_7">Fotomodulação Com Massagem Modeladora</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_8"><label for="id4_rd_8">Hidratação Corporal</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_9"><label for="id4_rd_9">Lifting Facial</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_10"><label for="id4_rd_10">Limpeza Com Peeling Ultra Martes</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_11"><label for="id4_rd_11">Mascara de Argila</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_12"><label for="id4_rd_12">Massagem Abyanga 4 Mãos </label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_13"><label for="id4_rd_13">Massagem Com Pindas</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_14"><label for="id4_rd_14">Massagem Com Velas</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_15"><label for="id4_rd_15">Massagem Modeladora + Endermo</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_16"><label for="id4_rd_16">Massagem Modeladora Corporal Manual</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_17"><label for="id4_rd_17">Massagem Relaxante</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_18"><label for="id4_rd_18">Massagem Thai</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_19"><label for="id4_rd_19">Micro Pigmentação Facial</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_20"><label for="id4_rd_20">Platinum Peel</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_21"><label for="id4_rd_21">Quick Shiatsu</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_22"><label for="id4_rd_22">Revitalização Corporal</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_23"><label for="id4_rd_23">Slim massagem redutora</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_24"><label for="id4_rd_24">Timexpert Lift</label></li>
+                                        </ul>
+
+                                        <ul class="options options-right">
+                                            <li><input type="checkbox" value="" id="id4_rd_25"> <label for="id4_rd_25">Banho de Lua Corporal</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_26"><label for="id4_rd_26">Drenagem Facial</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_27"><label for="id4_rd_27">Drenagem Linfática Com Óleos Essenciais</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_28"><label for="id4_rd_28">Drenagem Linfática Manual</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_29"><label for="id4_rd_29">Esfoliação + Hidratação Virilha</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_30"><label for="id4_rd_30">Esfoliação Virilha</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_31"><label for="id4_rd_31">Hidratação Com Silk</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_32"><label for="id4_rd_32">Hidratação Facial</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_33"><label for="id4_rd_33">Limpeza Com Peeling Cristal</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_34"><label for="id4_rd_34">Limpeza de Pele Com Vapor e Alta Frequência</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_35"><label for="id4_rd_35">Massagem Abyanga 2 Mãos</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_36"><label for="id4_rd_36">Massagem Ayurveda</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_37"><label for="id4_rd_37">Massagem Com Pindas Vulcânicas</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_38"><label for="id4_rd_38">Massagem Modeladora + Corrente Russa</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_39"><label for="id4_rd_39">Massagem Modeladora + Heccus</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_40"><label for="id4_rd_40">Massagem Oxigenante Facial</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_41"><label for="id4_rd_41">Massagem Terapêutica</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_42"><label for="id4_rd_42">Massagem Tui Na</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_43"><label for="id4_rd_43">Peeling de Diamante</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_44"><label for="id4_rd_44">Quick Massagem</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_45"><label for="id4_rd_45">Reflexologia Podal</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_46"><label for="id4_rd_46">Shiatsu</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_47"><label for="id4_rd_47">Terapia das Pedras Quentes</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_48"><label for="id4_rd_48">Timexpert Rides tratamento de efeito lifting anti rugas</label></li>
+                                        </ul>
+                                    </div>
+
+                                    <h3 class="form-options-title"><span>Pacotes e Eventos Personalizados</span></h3>
+                                    <ul class="pacotes">
+                                        <li>
+                                            <input type="checkbox" value="" id="pacote_01"><label for="pacote_01">O Dia da Noiva</label>
+                                            <p>Servi&ccedil;os exclusivos para deix&aacute;-la mais bela e deslumbrante neste dia t&atilde;o especial,reunindo tecnologia e profissionais de ponta para melhor atend&ecirc;-la. Tudo estrategicamente pensado para seu conforto.</p>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" value="" id="pacote_02"><label for="pacote_02">O Day Spa</label>
+                                            <p>Pacotes de 3 a 8 horas, com tratamento de est&eacute;tica facial e corporal para o seu bem-estar.</p>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" value="" id="pacote_03"><label for="pacote_03">O Spa Hour</label>
+                                            <p>Pacotes de 30 minutos a 1 hora, com tratamento de est&eacute;tica facial e corporal para o seu bem-estar.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="form-options-bottom">
+                                <a href="#" class="button voltar"><span>VOLTAR</span></a>
+                                <a href="#" class="button ok">OK</a>
+                            </div>
+                        </div>
+
+
+                        <div class="form-options" id="form-options-profissionais">
+
+                            <div class="form-options-content">
+
+                                <div class="scroll">
+                                    <div class="clearfix">
+
+                                        <div class="col-profissioanis">
+                                            <h3>Hair Stylists</h3>
+                                            <ul class="options">
+                                               
+                                                <li><input type="checkbox" id="_id1_rd_01"><label for="_id1_rd_01">André Claret</label></li>                                                
+                                                <li><input type="checkbox" id="_id1_rd_02"><label for="_id1_rd_02">Eron Araújo</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_03"><label for="_id1_rd_03">Fabio Torquato</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_04"><label for="_id1_rd_04">Gisa Araujo</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_05"><label for="_id1_rd_05">Marcio Luz</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_06"><label for="_id1_rd_06">Michael Teixeira</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_07"><label for="_id1_rd_07">Miró Rodriguez</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_08"><label for="_id1_rd_08">Paulo Neto</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_09"><label for="_id1_rd_09">Regina Maciel</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_10"><label for="_id1_rd_10">Samuel Jabes</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_11"><label for="_id1_rd_11">Thiago Vieira</label></li>
+                                                <li><input type="checkbox" id="_id1_rd_12"><label for="_id1_rd_12">Ulisses S.J.</label></li>
+
+
+                                            </ul>
+
+                                            <h3>Massoterapeutas e Esteticistas</h3>
+                                            <ul class="options">
+                                                 <li><input type="checkbox" id="_id6_rd_01"><label for="_id6_rd_01">Paula Machado</label></li>
+                                                <li><input type="checkbox" id="_id6_rd_02"><label for="_id6_rd_02">Renato Martins</label></li>
+                                               <li><input type="checkbox" id="_id6_rd_03"><label for="_id6_rd_03">Ricardo Vytai</label></li>
+                                                <li><input type="checkbox" id="_id6_rd_04"><label for="_id6_rd_04">Sonia Pintel</label></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-profissioanis col-profissioanis-right">
+
+                                            <h3>Make Up</h3>
+                                            <ul class="options">
+                                                 <li><input type="checkbox" id="_id2_rd_01"><label for="_id2_rd_01">Elton Thadeu</label></li>
+                                                <li><input type="checkbox" id="_id2_rd_02"><label for="_id2_rd_02">Suzana Galante</label></li>
+                                                <li><input type="checkbox" id="_id2_rd_03"><label for="_id2_rd_03">Thaísa Araújo</label></li>
+                                            </ul>
+
+                                            <h3>Manicures</h3>
+                                            <ul class="options">
+                                                 <li><input type="checkbox" id="_id3_rd_01"><label for="_id3_rd_01">Ana C. Fontes</label></li>
+                                                <li><input type="checkbox" id="_id3_rd_02"><label for="_id3_rd_02">Ana Paula</label></li>
+                                               <li><input type="checkbox" id="_id3_rd_03"><label for="_id3_rd_03">Beth Oliveira</label></li>
+                                                <li><input type="checkbox" id="_id3_rd_04"><label for="_id3_rd_04">Carla Gonçalves</label></li>
+                                                 <li><input type="checkbox" id="_id3_rd_05"><label for="_id3_rd_05">Conceição Osório</label></li>
+                                                  <li><input type="checkbox" id="_id3_rd_06"><label for="_id3_rd_06">Maria José</label></li>
+                                                   <li><input type="checkbox" id="_id3_rd_07"><label for="_id3_rd_07">Nicolle Correa</label></li>
+                                            </ul>
+
+                                            <h3>Depiladoras</h3>
+                                            <ul class="options">
+                                                 <li><input type="checkbox" id="_id4_rd_01"><label for="_id4_rd_01">Dilla Ferreira</label></li>
+                                                <li><input type="checkbox" id="_id4_rd_02"><label for="_id4_rd_02">Maria José</label></li>
+
+                                            </ul>
+
+                                             <h3>Podologia</h3>
+                                             <ul class="options">
+                                                 <li><input type="checkbox" id="_id5_rd_01"><label for="_id5_rd_01">Marcos Melo</label></li>
+
+
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-options-bottom">
+                                <a href="#" class="button voltar"><span>VOLTAR</span></a>
+                                <a href="#" class="button ok">OK</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <footer id="footer">
+        <div id="footer-content" class="clearfix">
+            <p class="como-chegar"><a class="ir" id="open-map" title="Veja como chegar">Veja como chegar</a></p>
+            <address class="address border">
+                
+            </address>
+            <ul class="contatos clearfix">
+                <li class="border telefone">F 11 3045 3330</li>
+                <li><a href="mailto:ventas@macsalonspa.com">ventas@macsalonspa.com</a></li>
+            </ul>
+            <ul class="social-links">
+                <li class="twitter"><a class="ir" href="" target="_blank">twitter</a> <span class="tooltip">twitter <span class="tooltip-arrow"></span></span></li>
+                <li class="facebook"><a class="ir" href="" target="_blank">facebook</a> <span class="tooltip">facebook <span class="tooltip-arrow"></span></span></li>
+                <li class="youtube"><a class="ir" href="" target="_blank">youtube</a> <span class="tooltip">youtube <span class="tooltip-arrow"></span></span></li>
+                <li class="linkedin"><a class="ir" href="#">linkedin</a> <span class="tooltip">linkedin <span class="tooltip-arrow"></span></span></li>
+            </ul>
+        </div>
+        <p class="logo-dv">Qbit Solutions</a></p>
+    </footer>
+    
+    <div id="blend-preloader">
+        <!-- Movido para MacSpa.Preloader, método initialize -->
+    </div>
+    
+    <script type="text/javascript">
+        
+        
+        $('.mais-descricao').click(function(){
+            
+            $('.descricao-ativa').find('a.menos-descricao').hide();
+            $('.descricao-ativa').animate({'height' : 72}, 500, function(){
+                $(this).parent().attr('style', '');
+                $(this).parent().find('a.mais-descricao').fadeIn(500);
+                $(this).parent().unbind('mouseover');
+                $(this).parent().unbind('mouseout');
+                $(this).find('a.menos-descricao').hide();
+                $(this).removeClass('descricao-ativa'); 
+            });
+            
+            
+            $(this).fadeOut(500,function(){
+                var div_texto_height = $(this).parent().find('div.descricao').find('div').height();
+                $(this).parent().css({'position' : 'relative', 'background-color' : '#fff', 'z-index' : 9999});
+                $(this).parent().find('div.descricao').animate({'height' : div_texto_height+6}, 500,function(){
+                    $(this).find('a.menos-descricao').show();   
+                });
+                $(this).parent().mouseover(function(){
+                    $(this).find('a.menos-descricao').show();
+                });
+                
+                $(this).parent().mouseout(function(){
+                    $(this).find('a.menos-descricao').hide();
+                });
+                
+                $(this).parent().find('div.descricao').addClass('descricao-ativa');
+                
+            });
+            
+            
+            
+            
+            
+        });
+        
+        $('.menos-descricao').click(function(){
+            
+            
+            
+            $(this).parent().parent().parent().unbind('mouseover');
+            $(this).parent().parent().parent().unbind('mouseout');
+            $(this).hide();
+            $(this).parent().parent().animate({'height' : 72}, 500, function(){
+                $(this).parent().attr('style', '');
+                $(this).parent().find('a.mais-descricao').fadeIn(500);
+                $(this).removeClass('descricao-ativa'); 
+            });
+        });
+        
+        
+        
+        function enviaPreAgendamento(){
+            
+            var valida = true;
+            $('.exclamation').remove();
+            $('#mensagem-obrigatorio').hide();  
+            
+            //Valida campos obrigatórios: nome, ao menos um dos telefones e e-mail.
+            if($('#nome').val() == ''){
+                $('#nome').parent().append('<span class="exclamation"></span>');
+                valida = false;
+            }
+            
+            if($('#telefone_celular').val() == '' && $('#telefone_fixo').val() == '' && $('#telefone_outro').val() == ''){
+                $('#telefone_celular').parent().append('<span class="exclamation"></span>');
+                valida = false;
+            }   
+            
+            var filter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!filter.test($('#email').val())) {
+                $('#email').parent().append('<span class="exclamation"></span>');
+                valida = false;
+            }
+            
+            
+            if(valida){
+                $('#blend-preloader').show();
+                
+                $('#button_enviar').attr('disabled', true);
+                $('#button_limpar').attr('disabled', true);
+                
+                $.post("enviapreagendamento.php", $('#form-pre-agendamento').serialize(), function(data){
+                    $('#button_enviar').attr('disabled', false);
+                    $('#button_limpar').attr('disabled', false);
+                    mostraConfirmacao();
+                });
+                
+            }else{
+                $('#mensagem-obrigatorio').show();  
+            }   
+
+            
+            
+        }
+        
+        function mostraConfirmacao(){
+            $('#blend-preloader').hide();
+            $('#mensagem-obrigatorio').hide();
+            $('#formulario-pre-agendamento').fadeOut(500);
+            $('#mensagem-sucesso').delay(500).fadeIn(500);  
+                
+        }
+        
+        function voltaFormulario(){
+            limpaFormulario();
+            $('#mensagem-sucesso').fadeOut(500);
+            $('#formulario-pre-agendamento').delay(500).fadeIn(500);
+            
+        }
+        
+        function limpaFormulario(){
+            $('#form-pre-agendamento').trigger('reset');
+            $('.exclamation').remove();
+            $('#mensagem-obrigatorio').hide();
+            
+            // reset checkbox
+            $('#page-preagendamento input[type="checkbox"]').attr('checked', false).button('refresh');
+            
+            // reset calendario
+            MacSpa.form.resetCalendar();
+            
+            // reset placeholder
+            if ( $.browser.msie ) {
+                $('[placeholder]').each(function() {
+                    $(this).val($(this).attr('placeholder'));
+                });
+            }
+        }
+    </script>
+    <script type="text/javascript">
+/*
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31876939-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+*/
+    </script>
+   
+    </body>
+</html>
