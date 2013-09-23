@@ -1,0 +1,11 @@
+2013/09/24 00:47:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Local".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('Local')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Local')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Local')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/macspa/admin/index.php?r=site/Local
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php
+---
