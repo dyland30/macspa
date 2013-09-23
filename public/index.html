@@ -85,7 +85,7 @@
                 </li>
                <!-- <li class="galeria"><a href="#galeria/" class="page-link page-link-galeria">GALERIA</a></li> -->
                 <li class="promociones"><a href="#promociones/" class="page-link">PROMOCIONES</a></li>
-                <li class="agendamento"><a href="#pre-agendamento/" class="page-link">RESERVAS</a></li>
+                <li class="agendamento"><a href="#reservas/" class="page-link">RESERVAS</a></li>
                 <li class="blog"><a href="#blog/" class="page-link">BLOG</a></li>
             </ul>
         </nav>
@@ -1110,7 +1110,7 @@
                                 </h2>    
                                 <div class="scroll">
                                     <div class="clearfix">
-                                        <div class="slideshow" id="flavor_2"></div>
+                                        <div class="slideshow" id="flavor_1"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1149,17 +1149,17 @@
                                     <ul id="formulario-pre-agendamento" class="form-fields">
                                         <li class="form-row clearfix">
 
-                                            <input type="text" id="nome" name="nome" placeholder="nome completo" class="nome">
+                                            <input type="text" id="nome" name="nome" placeholder="Nombre Completo" class="nome">
                                         </li>
 
                                         <li class="form-row clearfix">
-                                            <input type="text" id="telefone_celular" name="telefone_celular" placeholder="tel celular" class="fone vertical-separator">
-                                            <input type="text" id="telefone_fixo" name="telefone_fixo" placeholder="tel fixo" class="fone  vertical-separator">
-                                            <input type="text" id="telefone_outro" name="telefone_outro" placeholder="outro" class="fone">                                    
+                                            <input type="text" id="telefone_celular" name="telefone_celular" placeholder="Celular" class="fone vertical-separator">
+                                            <input type="text" id="telefone_fixo" name="telefone_fixo" placeholder="Tel Fijo" class="fone  vertical-separator">
+                                            <input type="text" id="telefone_outro" name="telefone_outro" placeholder="Otro" class="fone">                                    
                                         </li>
 
                                         <li class="form-row clearfix">
-                                            <input type="text" id="email" name="email" class="nome" placeholder="e-mail">
+                                            <input type="text" id="email" name="email" class="nome" placeholder="Correo">
                                         </li>
 
                                         <li class="form-row clearfix">
@@ -1170,29 +1170,29 @@
                                         </li>
 
                                         <li class="form-row clearfix">
-                                            <label class="label label-datepicker">dia e hor&aacute;rio opcionais</label>
+                                            <label class="label label-datepicker">día y hora opcionales</label>
                                             <a href="#" class="ir show-calendar">Calendário</a>
                                             <input type="text" name="data_opt" class="data" placeholder="( dd / mm / aaaa )"  id="datepicker-2">
                                             <input type="text" id="hora_opt" name="hora_opt" class="hora" placeholder="( 00:00 )">                                        
                                         </li>
 
                                         <li class="form-row clearfix">
-                                            <a href="#" class="label more" id="button-servicos"><span>serviços desejados</span></a>
+                                            <a href="#" class="label more" id="button-servicos"><span>seleccione sus servicios</span></a>
                                             <input type="text" name="servicos-selecionados" value="" id="servicos-selecionados">
                                         </li>
 
                                         <li class="form-row clearfix">
-                                            <a href="#" class="label more" id="button-profissionais"><span>profissionais de sua preferência</span></a>
+                                            <a href="#" class="label more" id="button-profissionais"><span>seleccione al profesional de su preferencia</span></a>
                                             <input type="text" name="profissionais-selecionados" value="" id="profissionais-selecionados">
                                         </li>
 
                                         <li class="form-row clearfix">
-                                            <textarea id="comentario" name="comentario" placeholder="coment&aacute;rios e observa&ccedil;&otilde;es"></textarea>
+                                            <textarea id="comentario" name="comentario" placeholder="Comentario u Observación"></textarea>
                                         </li>
 
                                         <li class="form-row submit-row clearfix">
                                             <input type="button" id="button_enviar" value="ENVIAR" onClick="enviaPreAgendamento();">
-                                            <input type="button" id="button_limpar" value="LIMPAR" class="mR2" onClick="limpaFormulario();">
+                                            <input type="button" id="button_limpar" value="LIMPIAR" class="mR2" onClick="limpaFormulario();">
                                         </li>
                                     </ul>
                                 </div>
@@ -1204,166 +1204,93 @@
                             <div class="form-options-content">
 
                                 <div class="scroll">
-                                    <h3 class="form-options-title"><span>Cabelo</span></h3>
+                                    <h3 class="form-options-title"><span>Cabello</span></h3>
                                     <div class="options-cols clearfix">
 
                                         <ul class="options">
-                                            <li><input type="checkbox" value="" id="id_rd_1"><label for="id_rd_1">Alfa I. </label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_2"><label for="id_rd_2">Ampola</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_3"><label for="id_rd_3">Aplicação Vitamina C</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_4"><label for="id_rd_4">Balayage</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_5"><label for="id_rd_5">Blonde Shine Com Escova </label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_6"><label for="id_rd_6">C P R Trat.</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_7"><label for="id_rd_7">Cauteriz. Molec. C</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_8"><label for="id_rd_8">Chronologiste</label></li>                                       <li><input type="checkbox" value="" id="id_rd_9"><label for="id_rd_9">Coloração</label></li>                                       <li><input type="checkbox" value="" id="id_rd_10"><label for="id_rd_10">Corte Masc. + Tratamento </label></li>                                       <li><input type="checkbox" value="" id="id_rd_11"><label for="id_rd_11">Couro Cab. Red </label></li>                                       <li><input type="checkbox" value="" id="id_rd_12"><label for="id_rd_12">D. Stress C. Redk </label></li>                                       <li><input type="checkbox" value="" id="id_rd_13"><label for="id_rd_13">Efeito Ultra L.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_14"><label for="id_rd_14">Escova</label></li>
-                                           <li><input type="checkbox" value="" id="id_rd_15"><label for="id_rd_15">Escova Cationica Gloss</label></li>
-                                           <li><input type="checkbox" value="" id="id_rd_16"><label for="id_rd_16">Escova de Mega Hair</label></li>                                       <li><input type="checkbox" value="" id="id_rd_17"><label for="id_rd_17">Escova Unique Shine</label></li>                                       <li><input type="checkbox" value="" id="id_rd_18"><label for="id_rd_18">Hidratação Reconstr</label></li>                                       <li><input type="checkbox" value="" id="id_rd_19"><label for="id_rd_19">Hiper Nutrição </label></li>                                       <li><input type="checkbox" value="" id="id_rd_20"><label for="id_rd_20">Inj. Reconst. Molec.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_21"><label for="id_rd_21">Lp Bio</label></li>
-                                           <li><input type="checkbox" value="" id="id_rd_22"><label for="id_rd_22">Mega Hair</label></li>                                       <li><input type="checkbox" value="" id="id_rd_23"><label for="id_rd_23">Penteado</label></li>                                       <li><input type="checkbox" value="" id="id_rd_24"><label for="id_rd_24">Plastica Capilar</label></li>                                       <li><input type="checkbox" value="" id="id_rd_25"><label for="id_rd_25">Plastica Capilar Sem Escova</label></li>                                       <li><input type="checkbox" value="" id="id_rd_26"><label for="id_rd_26">Reconstrução Plus</label></li>                                       <li><input type="checkbox" value="" id="id_rd_27"><label for="id_rd_27">Reflexo</label></li>                                       <li><input type="checkbox" value="" id="id_rd_28"><label for="id_rd_28">Retoque Tintura</label></li>                                       <li><input type="checkbox" value="" id="id_rd_29"><label for="id_rd_29">S. O. S. Redken</label></li>                                       <li><input type="checkbox" value="" id="id_rd_30"><label for="id_rd_30">Slimming Capilar</label></li>                                       <li><input type="checkbox" value="" id="id_rd_31"><label for="id_rd_31">Therm Blindagem Capi</label></li>                                       <li><input type="checkbox" value="" id="id_rd_32"><label for="id_rd_32">Time Reset</label></li>                                       <li><input type="checkbox" value="" id="id_rd_33"><label for="id_rd_33">Trast. Rej. Premium K</label></li>                                       <li><input type="checkbox" value="" id="id_rd_34"><label for="id_rd_34">Trat. Hidracl. Redken</label></li>                                       <li><input type="checkbox" value="" id="id_rd_35"><label for="id_rd_35">Trat. Oles. Couro C.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_36"><label for="id_rd_36">Trat. Potencializador</label></li>                                       <li><input type="checkbox" value="" id="id_rd_37"><label for="id_rd_37">Trat. Time Reset de Luxe</label></li>                                       <li><input type="checkbox" value="" id="id_rd_38"><label for="id_rd_38">Tratamento</label></li>                                       <li><input type="checkbox" value="" id="id_rd_39"><label for="id_rd_39">Tratamento Pro</label></li>                                       <li><input type="checkbox" value="" id="id_rd_40"><label for="id_rd_40">Tratamento Recarga</label></li>                                       
+                                            <li><input type="checkbox" value="" id="id_rd_1"><label for="id_rd_1">Servicio 1 </label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_2"><label for="id_rd_2">Servicio 2</label></li>
+
 
                                         </ul>
 
                                         <ul class="options options-right">
-                                            <li><input type="checkbox" value="" id="id_rd_41"> <label for="id_rd_41">Alisamento</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_42"><label for="id_rd_42">Aplicação de Produto</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_43"><label for="id_rd_43">Baby Liss</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_44"><label for="id_rd_44">Blindagem Capi</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_45"><label for="id_rd_45">Blonde Shine Plus</label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_46"><label for="id_rd_46">Carbo Recharge for Man </label></li>
-                                            <li><input type="checkbox" value="" id="id_rd_47"><label for="id_rd_47">Color Gloss</label></li>                                       <li><input type="checkbox" value="" id="id_rd_48"><label for="id_rd_48">Corte Feminino</label></li>                                       <li><input type="checkbox" value="" id="id_rd_49"><label for="id_rd_49">Corte Masculino</label></li>                                       <li><input type="checkbox" value="" id="id_rd_50"><label for="id_rd_50">Cromatonalização</label></li>                                       <li><input type="checkbox" value="" id="id_rd_51"><label for="id_rd_51">Decapagem</label></li>                                       <li><input type="checkbox" value="" id="id_rd_52"><label for="id_rd_52">Esc. Z. Frizz</label></li>                                       <li><input type="checkbox" value="" id="id_rd_53"><label for="id_rd_53">Escova Cationica</label></li>                                       <li><input type="checkbox" value="" id="id_rd_54"><label for="id_rd_54">Escova de Bril Loreal</label></li>                                       <li><input type="checkbox" value="" id="id_rd_55"><label for="id_rd_55">Escova Hidronut.</label></li>                                       <li><input type="checkbox" value="" id="id_rd_56"><label for="id_rd_56">Henna Importada</label></li>                                       <li><input type="checkbox" value="" id="id_rd_57"><label for="id_rd_57">Hidratonalização</label></li>                                       <li><input type="checkbox" value="" id="id_rd_58"><label for="id_rd_58">Homme</label></li>
-                                           <li><input type="checkbox" value="" id="id_rd_59"><label for="id_rd_59">Kerabiotic</label></li>                                       <li><input type="checkbox" value="" id="id_rd_60"><label for="id_rd_60">Mascara de Trat</label></li>                                       <li><input type="checkbox" value="" id="id_rd_61"><label for="id_rd_61">Mousse de Choc</label></li>                                       <li><input type="checkbox" value="" id="id_rd_62"><label for="id_rd_62">Permanente</label></li>                                       <li><input type="checkbox" value="" id="id_rd_63"><label for="id_rd_63">Plastica Capilar Com Escova</label></li>                                       <li><input type="checkbox" value="" id="id_rd_64"><label for="id_rd_64">Reconstrução</label></li>                                       <li><input type="checkbox" value="" id="id_rd_65"><label for="id_rd_65">Red Volume </label></li>                                       <li><input type="checkbox" value="" id="id_rd_66"><label for="id_rd_66">Relaxamento</label></li>                                       <li><input type="checkbox" value="" id="id_rd_67"><label for="id_rd_67">Ritual K </label></li>                                       <li><input type="checkbox" value="" id="id_rd_68"><label for="id_rd_68">Secagem</label></li>                                       <li><input type="checkbox" value="" id="id_rd_69"><label for="id_rd_69">T. I.</label></li>
-                                           <li><input type="checkbox" value="" id="id_rd_70"><label for="id_rd_70">Tintura</label></li>
-                                           <li><input type="checkbox" value="" id="id_rd_71"><label for="id_rd_71">Trat Esc Th Repair</label></li>                                       <li><input type="checkbox" value="" id="id_rd_72"><label for="id_rd_72">Trat. Nutribal. Redken</label></li>                                       <li><input type="checkbox" value="" id="id_rd_73"><label for="id_rd_73">Trat. Peeling Capilar</label></li>                                       <li><input type="checkbox" value="" id="id_rd_74"><label for="id_rd_74">Trat. Redutor de Vol</label></li>                                       <li><input type="checkbox" value="" id="id_rd_75"><label for="id_rd_75">Trat. Volumorphose</label></li>                                       <li><input type="checkbox" value="" id="id_rd_76"><label for="id_rd_76">Tratamento Polimento</label></li>                                       <li><input type="checkbox" value="" id="id_rd_77"><label for="id_rd_77">Queratinização</label></li>                                       <li><input type="checkbox" value="" id="id_rd_78"><label for="id_rd_78">Tratamento Redken</label></li>                                      <li><input type="checkbox" value="" id="id_rd_79"><label for="id_rd_79">Ultra Shine</label></li>                              
-                                        </ul>
+                                            <li><input type="checkbox" value="" id="id_rd_41"> <label for="id_rd_41">Servicio 3</label></li>
+                                            <li><input type="checkbox" value="" id="id_rd_42"><label for="id_rd_42">Servicio 4</label></li>
+                                          </ul>
                                     </div>
 
-                                    <h3 class="form-options-title"><span>Maquiagem</span></h3>
+                                    <h3 class="form-options-title"><span>Maquillaje</span></h3>
                                     <div class="options-cols clearfix">
                                         <ul class="options">
                                             
-                                            <li><input type="checkbox" value="" id="id2_rd_1"><label for="id2_rd_1">Maquiagem </label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_2"><label for="id2_rd_2">Design de Sobrancelhas</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_3"><label for="id2_rd_3">Maq Definitiva Sobrancelha</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_4"><label for="id2_rd_4">Maquiagem Com Cílios</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_5"><label for="id2_rd_5">Olhos</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_6"><label for="id2_rd_6">Permanente de Cílios</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_7"><label for="id2_rd_7">Tintura de Cílios</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_1"><label for="id2_rd_1">Servicio 1 </label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_2"><label for="id2_rd_2">Servicio 2</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_3"><label for="id2_rd_3">Servicio 3</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_4"><label for="id2_rd_4">Servicio 4</label></li>
+                                            
                                         </ul>
 
                                         <ul class="options options-right">
-                                            <li><input type="checkbox" value="" id="id2_rd_9"> <label for="id2_rd_9">Colocação Cílios Sem</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_10"><label for="id2_rd_10">Curso Auto-maquiagem</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_11"><label for="id2_rd_11">Maq Definitiva Boca</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_12"><label for="id2_rd_12">Maquiagem Artistica</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_13"><label for="id2_rd_13">Maquiagem Maq Definitiva</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_14"><label for="id2_rd_14">Maquiagem Sem Cílios</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_15"><label for="id2_rd_15">Sobrancelhas Com Henna</label></li>
-                                            <li><input type="checkbox" value="" id="id2_rd_16"><label for="id2_rd_16">Tintura de Sobrancelhas</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_9"> <label for="id2_rd_9">Servicio 5</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_10"><label for="id2_rd_10">Servicio 6</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_11"><label for="id2_rd_11">Servicio 7</label></li>
+                                            <li><input type="checkbox" value="" id="id2_rd_12"><label for="id2_rd_12">Servicio 8</label></li>
+                                            
                                         </ul>
                                     </div>
 
                                     <h3 class="form-options-title"><span>Manicure</span></h3>
                                     <div class="options-cols clearfix">
                                         <ul class="options">
-                                            <li><input type="checkbox" value="" id="id3_rd_1"><label for="id3_rd_1">Esfoliação Manicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_2"><label for="id3_rd_2">Hidração Profunda Com Parafina Pedicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_3"><label for="id3_rd_3">Manicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_4"><label for="id3_rd_4">Manicure e Pedicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_5"><label for="id3_rd_5">Manutenção Unha de Gel</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_6"><label for="id3_rd_6">Pedicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_7"><label for="id3_rd_7">Pedicure Francezinha</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_8"><label for="id3_rd_8">Só Esmalte Manicure </label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_9"><label for="id3_rd_9">Só Esmalte Pedicure Francesinha</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_10"><label for="id3_rd_10">Spa dos Pés</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_11"><label for="id3_rd_11">Unha de Gel</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_1"><label for="id3_rd_1">Servicio 1</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_2"><label for="id3_rd_2">Servicio 2</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_3"><label for="id3_rd_3">Servicio 3</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_4"><label for="id3_rd_4">Servicio 4</label></li>
+                                            
                                         </ul>
 
                                         <ul class="options options-right">
-                                            <li><input type="checkbox" value="" id="id3_rd_12"> <label for="id3_rd_12">Esfoliação Pedicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_13"><label for="id3_rd_13">Hidratação Profunda Com Parafina Manicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_14"><label for="id3_rd_14">Manicure Decorada</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_15"><label for="id3_rd_15">Manicure Francezinha</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_16"><label for="id3_rd_16">Manutenção Unha Postiça</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_17"><label for="id3_rd_17">Pedicure Decorada</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_18"><label for="id3_rd_18">Só Esmalte Francesinha</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_19"><label for="id3_rd_19">Só Esmalte Pedicure</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_20"><label for="id3_rd_20">Spa das Mãos</label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_21"><label for="id3_rd_21">Unha de Acrigel </label></li>
-                                            <li><input type="checkbox" value="" id="id3_rd_22"><label for="id3_rd_22">Unha Postiça</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_12"> <label for="id3_rd_12">Servicio 1</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_13"><label for="id3_rd_13">Servicio 2</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_14"><label for="id3_rd_14">Servicio 3</label></li>
+                                            <li><input type="checkbox" value="" id="id3_rd_15"><label for="id3_rd_15">Servicio 4</label></li>
+                                            
                                         </ul>
                                     </div>
 
-                                    <h3 class="form-options-title"><span>Tratamentos Estéticos</span></h3>
+                                    <h3 class="form-options-title"><span>Tratamientos Estéticos</span></h3>
                                     <div class="options-cols clearfix">
                                         <ul class="options">
-                                            <li><input type="checkbox" value="" id="id4_rd_1"><label for="id4_rd_1">Bambuterapia</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_2"><label for="id4_rd_2">Banho Ofuro</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_3"><label for="id4_rd_3">Drenagem Facial Pós Operatória</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_4"><label for="id4_rd_4">Drenagem Linfática Gestante</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_5"><label for="id4_rd_5">Drenagem Linfática Pós Operatória e Gestante</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_6"><label for="id4_rd_6">Esfoliação Corporal</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_7"><label for="id4_rd_7">Fotomodulação Com Massagem Modeladora</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_8"><label for="id4_rd_8">Hidratação Corporal</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_9"><label for="id4_rd_9">Lifting Facial</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_10"><label for="id4_rd_10">Limpeza Com Peeling Ultra Martes</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_11"><label for="id4_rd_11">Mascara de Argila</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_12"><label for="id4_rd_12">Massagem Abyanga 4 Mãos </label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_13"><label for="id4_rd_13">Massagem Com Pindas</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_14"><label for="id4_rd_14">Massagem Com Velas</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_15"><label for="id4_rd_15">Massagem Modeladora + Endermo</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_16"><label for="id4_rd_16">Massagem Modeladora Corporal Manual</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_17"><label for="id4_rd_17">Massagem Relaxante</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_18"><label for="id4_rd_18">Massagem Thai</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_19"><label for="id4_rd_19">Micro Pigmentação Facial</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_20"><label for="id4_rd_20">Platinum Peel</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_21"><label for="id4_rd_21">Quick Shiatsu</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_22"><label for="id4_rd_22">Revitalização Corporal</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_23"><label for="id4_rd_23">Slim massagem redutora</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_24"><label for="id4_rd_24">Timexpert Lift</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_1"><label for="id4_rd_1">Servicio 1</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_2"><label for="id4_rd_2">Servicio 2</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_3"><label for="id4_rd_3">Servicio 3</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_4"><label for="id4_rd_4">Servicio 4</label></li>
+                                            
                                         </ul>
 
                                         <ul class="options options-right">
-                                            <li><input type="checkbox" value="" id="id4_rd_25"> <label for="id4_rd_25">Banho de Lua Corporal</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_26"><label for="id4_rd_26">Drenagem Facial</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_27"><label for="id4_rd_27">Drenagem Linfática Com Óleos Essenciais</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_28"><label for="id4_rd_28">Drenagem Linfática Manual</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_29"><label for="id4_rd_29">Esfoliação + Hidratação Virilha</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_30"><label for="id4_rd_30">Esfoliação Virilha</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_31"><label for="id4_rd_31">Hidratação Com Silk</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_32"><label for="id4_rd_32">Hidratação Facial</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_33"><label for="id4_rd_33">Limpeza Com Peeling Cristal</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_34"><label for="id4_rd_34">Limpeza de Pele Com Vapor e Alta Frequência</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_35"><label for="id4_rd_35">Massagem Abyanga 2 Mãos</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_36"><label for="id4_rd_36">Massagem Ayurveda</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_37"><label for="id4_rd_37">Massagem Com Pindas Vulcânicas</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_38"><label for="id4_rd_38">Massagem Modeladora + Corrente Russa</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_39"><label for="id4_rd_39">Massagem Modeladora + Heccus</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_40"><label for="id4_rd_40">Massagem Oxigenante Facial</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_41"><label for="id4_rd_41">Massagem Terapêutica</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_42"><label for="id4_rd_42">Massagem Tui Na</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_43"><label for="id4_rd_43">Peeling de Diamante</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_44"><label for="id4_rd_44">Quick Massagem</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_45"><label for="id4_rd_45">Reflexologia Podal</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_46"><label for="id4_rd_46">Shiatsu</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_47"><label for="id4_rd_47">Terapia das Pedras Quentes</label></li>
-                                            <li><input type="checkbox" value="" id="id4_rd_48"><label for="id4_rd_48">Timexpert Rides tratamento de efeito lifting anti rugas</label></li>
-                                        </ul>
+                                            <li><input type="checkbox" value="" id="id4_rd_25"> <label for="id4_rd_25">Servicio 5</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_26"><label for="id4_rd_26">Servicio 6</label></li>
+                                            <li><input type="checkbox" value="" id="id4_rd_27"><label for="id4_rd_27">Servicio 7</label></li>
+                                            </ul>
                                     </div>
 
-                                    <h3 class="form-options-title"><span>Pacotes e Eventos Personalizados</span></h3>
+                                    <h3 class="form-options-title"><span>Tratamientos Personalizados</span></h3>
                                     <ul class="pacotes">
                                         <li>
-                                            <input type="checkbox" value="" id="pacote_01"><label for="pacote_01">O Dia da Noiva</label>
-                                            <p>Servi&ccedil;os exclusivos para deix&aacute;-la mais bela e deslumbrante neste dia t&atilde;o especial,reunindo tecnologia e profissionais de ponta para melhor atend&ecirc;-la. Tudo estrategicamente pensado para seu conforto.</p>
+                                            <input type="checkbox" value="" id="pacote_01"><label for="pacote_01">O Dia da Novia</label>
+                                            <p>Descripción servicio 01</p>
                                         </li>
 
                                         <li>
                                             <input type="checkbox" value="" id="pacote_02"><label for="pacote_02">O Day Spa</label>
-                                            <p>Pacotes de 3 a 8 horas, com tratamento de est&eacute;tica facial e corporal para o seu bem-estar.</p>
+                                            <p>Descripción servicio 02</p>
                                         </li>
 
                                         <li>
                                             <input type="checkbox" value="" id="pacote_03"><label for="pacote_03">O Spa Hour</label>
-                                            <p>Pacotes de 30 minutos a 1 hora, com tratamento de est&eacute;tica facial e corporal para o seu bem-estar.</p>
+                                            <p>Descripción servicio 03</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -1371,7 +1298,7 @@
                             </div>
 
                             <div class="form-options-bottom">
-                                <a href="#" class="button voltar"><span>VOLTAR</span></a>
+                                <a href="#" class="button voltar"><span>REGRESAR</span></a>
                                 <a href="#" class="button ok">OK</a>
                             </div>
                         </div>
@@ -1445,10 +1372,7 @@
                                              <ul class="options">
                                                  <li><input type="checkbox" id="_id5_rd_01"><label for="_id5_rd_01">Marcos Melo</label></li>
 
-
                                             </ul>
-
-
                                         </div>
 
                                     </div>
@@ -1457,7 +1381,7 @@
                             </div>
 
                             <div class="form-options-bottom">
-                                <a href="#" class="button voltar"><span>VOLTAR</span></a>
+                                <a href="#" class="button voltar"><span>REGRESAR</span></a>
                                 <a href="#" class="button ok">OK</a>
                             </div>
                         </div>
@@ -1472,12 +1396,12 @@
     
     <footer id="footer">
         <div id="footer-content" class="clearfix">
-            <p class="como-chegar"><a class="ir" id="open-map" title="Veja como chegar">Veja como chegar</a></p>
+            <p class="como-chegar"><a class="ir" id="open-map" title="Veja como chegar">¿Como Llegar?</a></p>
             <address class="address border">
                 
             </address>
             <ul class="contatos clearfix">
-                <li class="border telefone">F 11 3045 3330</li>
+                <li class="border telefone">(01)566-5826 / 566-1488</li>
                 <li><a href="mailto:ventas@macsalonspa.com">ventas@macsalonspa.com</a></li>
             </ul>
             <ul class="social-links">
@@ -1500,20 +1424,20 @@
 	
 		$.getJSON("static/js/plugins/agilecarousel/agile_carousel_data.php", function(data) {
 		        $(document).ready(function(){
-		            $("#flavor_2").agile_carousel({
+		            $("#flavor_1").agile_carousel({
 		                carousel_data: data,
-		                carousel_outer_height: 330,
-		                carousel_height: 230,
-		                slide_height: 230,
+		                carousel_outer_height: 300,
+		                carousel_height: 300,
+		                slide_height: 300,
 		                carousel_outer_width: 480,
 		                slide_width: 480,
 		                transition_type: "fade",
-		                transition_time: 600,
-		                timer: 3000,
+		                transition_time: 300,
+		                timer: 4000,
 		                continuous_scrolling: true,
-		                control_set_1: "numbered_buttons,previous_button,pause_button,next_button",
-		                control_set_2: "content_buttons",
-		                change_on_hover: "content_buttons"
+		                control_set_1: "numbered_buttons",
+		                no_control_set: "hover_previous_button,hover_next_button"
+		               
 		            });
 		        });
 		    });

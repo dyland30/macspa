@@ -82,7 +82,7 @@ html body{ width:100%; height:100%; overflow:hidden; }
 
 /* generic elements */
 .white-container{ padding:0 0 23px 0; background:url(../images/global/bg_white_container_bottom.png) no-repeat right bottom; }
-.white-container-inner{ background:url(../images/global/bg_white_container.png) repeat 0 0; padding:90px 0 34px 0; }
+.white-container-inner{ background:url(../images/global/bg_white_container.png) repeat 0 0; padding:40px 0 34px 0; }
 .white-container p{ font-size:11px; letter-spacing: 0.5px !important; }
 .white-container .title{ font-size:10px; font-weight:bold; border-top:1px dotted #800080; padding:5px 0 25px 0; }
 .white-container .title span{ border-top:1px solid #800080; padding:8px 0 0 0; display:block; line-height:1em; }

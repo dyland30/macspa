@@ -164,7 +164,7 @@ MacSpa.pages = {
     'macspa_servicios' :                { 'url' : 'macspa/servicios/',          'id' : '#page-macspa-servicios' },
     'macspa_equipo' :                   { 'url' : 'macspa/equipo/',             'id' : '#page-macspa-equipo' },
     'eventos' :                         { 'url' : 'blend/eventos/',             'id' : '#page-eventos' },
-    'preagendamento' :                  { 'url' : 'pre-agendamento/',           'id' : '#page-preagendamento' }
+    'preagendamento' :                  { 'url' : 'reservas/',                  'id' : '#page-preagendamento' }
 };
 
 // Router de la aplicacion
