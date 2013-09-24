@@ -20,12 +20,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'idlocal'); ?>
-		<?php echo $form->textField($model,'idlocal'); ?>
-		<?php echo $form->error($model,'idlocal'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'nombre'); ?>
 		<?php echo $form->textField($model,'nombre',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'nombre'); ?>

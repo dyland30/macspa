@@ -37,11 +37,7 @@
 		<?php echo $form->error($model,'apellidos'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'dni'); ?>
-		<?php echo $form->textField($model,'dni',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'dni'); ?>
-	</div>
+	
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'direccion'); ?>
@@ -75,21 +71,17 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idlocal'); ?>
-		<?php echo $form->textField($model,'idlocal'); ?>
+		<?php echo $form->dropDownList($model,'idlocal',$model->getLocales());?>
 		<?php echo $form->error($model,'idlocal'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'flg_activo'); ?>
-		<?php echo $form->textField($model,'flg_activo'); ?>
+		<?php echo $form->checkBox($model,'flg_activo',  array('checked'=>$model->flg_activo)); ?>
 		<?php echo $form->error($model,'flg_activo'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'personalcol'); ?>
-		<?php echo $form->textField($model,'personalcol',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'personalcol'); ?>
-	</div>
+	
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

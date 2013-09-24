@@ -35,8 +35,10 @@ class Servicio extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+                        
 			array('idcategoria', 'numerical', 'integerOnly'=>true),
-			array('nombre, descripcion', 'length', 'max'=>45),
+			array('nombre', 'required'),
+                        array('nombre, descripcion', 'length', 'max'=>45),
 			array('precio', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -56,7 +58,7 @@ class Servicio extends CActiveRecord
 			'personals' => array(self::MANY_MANY, 'Personal', 'personal_servicio(idservicio, idPersonal)'),
 			'promocions' => array(self::MANY_MANY, 'Promocion', 'promocion_servicio(idservicio, idpromocion)'),
 			'reservas' => array(self::MANY_MANY, 'Reserva', 'reserva_servicio(servicio_idservicio, reserva_idreserva)'),
-			'idcategoria0' => array(self::BELONGS_TO, 'Categoria', 'idcategoria'),
+			'categoria' => array(self::BELONGS_TO, 'Categoria', 'idcategoria'),
 		);
 	}
 
@@ -69,7 +71,7 @@ class Servicio extends CActiveRecord
 			'idservicio' => 'Idservicio',
 			'nombre' => 'Nombre',
 			'descripcion' => 'Descripcion',
-			'idcategoria' => 'Idcategoria',
+			'idcategoria' => 'Categoría',
 			'precio' => 'Precio',
 		);
 	}
@@ -103,6 +105,12 @@ class Servicio extends CActiveRecord
 		));
 	}
 
+         public function getCategorias(){
+            $lista = Categoria::model()->findAll();
+            
+            $array = CHtml::listData($lista, 'idcategoria','nombre');
+            return $array;
+        }
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!

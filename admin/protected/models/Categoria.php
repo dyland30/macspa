@@ -32,6 +32,7 @@ class Categoria extends CActiveRecord
 			array('nombre, descripcion', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
+                        array('nombre','required'),
 			array('idcategoria, nombre, descripcion', 'safe', 'on'=>'search'),
 		);
 	}

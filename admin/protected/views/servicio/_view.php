@@ -18,7 +18,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idcategoria')); ?>:</b>
-	<?php echo CHtml::encode($data->idcategoria); ?>
+	<?php echo CHtml::encode($data->categoria->nombre); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('precio')); ?>:</b>

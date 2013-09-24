@@ -50,7 +50,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'contenido',
 		'div_id',
 		'flg_activo',
-		'Usuario_idUsuario',
+		'idusuario',
 		array(
 			'class'=>'CButtonColumn',
 		),

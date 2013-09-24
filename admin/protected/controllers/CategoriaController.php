@@ -158,6 +158,7 @@ class CategoriaController extends Controller
 		return $model;
 	}
 
+        
 	/**
 	 * Performs the AJAX validation.
 	 * @param Categoria $model the model to be validated

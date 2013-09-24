@@ -44,9 +44,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Usuario_idUsuario'); ?>
-		<?php echo $form->textField($model,'Usuario_idUsuario'); ?>
-		<?php echo $form->error($model,'Usuario_idUsuario'); ?>
+		<?php echo $form->labelEx($model,'idusuario'); ?>
+		<?php echo $form->textField($model,'idusuario'); ?>
+		<?php echo $form->error($model,'idusuario'); ?>
 	</div>
 
 	<div class="row buttons">

@@ -25,8 +25,8 @@
 	<?php echo CHtml::encode($data->flg_activo); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Usuario_idUsuario')); ?>:</b>
-	<?php echo CHtml::encode($data->Usuario_idUsuario); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('idusuario')); ?>:</b>
+	<?php echo CHtml::encode($data->idusuario); ?>
 	<br />
 
 

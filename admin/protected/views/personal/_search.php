@@ -26,10 +26,7 @@
 		<?php echo $form->textField($model,'apellidos',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'dni'); ?>
-		<?php echo $form->textField($model,'dni',array('size'=>45,'maxlength'=>45)); ?>
-	</div>
+	
 
 	<div class="row">
 		<?php echo $form->label($model,'direccion'); ?>
@@ -66,10 +63,7 @@
 		<?php echo $form->textField($model,'flg_activo'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'personalcol'); ?>
-		<?php echo $form->textField($model,'personalcol',array('size'=>45,'maxlength'=>45)); ?>
-	</div>
+	
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>

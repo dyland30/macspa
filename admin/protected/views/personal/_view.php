@@ -17,10 +17,7 @@
 	<?php echo CHtml::encode($data->apellidos); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('dni')); ?>:</b>
-	<?php echo CHtml::encode($data->dni); ?>
-	<br />
-
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('direccion')); ?>:</b>
 	<?php echo CHtml::encode($data->direccion); ?>
 	<br />
@@ -50,10 +47,7 @@
 	<?php echo CHtml::encode($data->flg_activo); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('personalcol')); ?>:</b>
-	<?php echo CHtml::encode($data->personalcol); ?>
-	<br />
-
+	
 	*/ ?>
 
 </div>

@@ -7,7 +7,7 @@
  * @property integer $idPersonal
  * @property string $nombres
  * @property string $apellidos
- * @property string $dni
+
  * @property string $direccion
  * @property string $fechaNacimiento
  * @property string $correo
@@ -15,7 +15,6 @@
  * @property string $telefono
  * @property integer $idlocal
  * @property integer $flg_activo
- * @property string $personalcol
  *
  * The followings are the available model relations:
  * @property Local $idlocal0
@@ -40,13 +39,15 @@ class Personal extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('idPersonal', 'required'),
+                        array('nombres', 'required'),
+                        array('apellidos', 'required'),
 			array('idPersonal, idlocal, flg_activo', 'numerical', 'integerOnly'=>true),
-			array('nombres, apellidos, dni, direccion, correo, personalcol', 'length', 'max'=>45),
+			array('nombres, apellidos, direccion, correo', 'length', 'max'=>45),
 			array('celular, telefono', 'length', 'max'=>20),
 			array('fechaNacimiento', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idPersonal, nombres, apellidos, dni, direccion, fechaNacimiento, correo, celular, telefono, idlocal, flg_activo, personalcol', 'safe', 'on'=>'search'),
+			array('idPersonal, nombres, apellidos, direccion, fechaNacimiento, correo, celular, telefono, idlocal, flg_activo,', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,7 +59,7 @@ class Personal extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idlocal0' => array(self::BELONGS_TO, 'Local', 'idlocal'),
+			'local' => array(self::BELONGS_TO, 'Local', 'idlocal'),
 			'servicios' => array(self::MANY_MANY, 'Servicio', 'personal_servicio(idPersonal, idservicio)'),
 		);
 	}
@@ -69,18 +70,17 @@ class Personal extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idPersonal' => 'Id Personal',
+			'idlocal' => 'Local',
+                        'idPersonal' => 'Doc. Identidad',
 			'nombres' => 'Nombres',
 			'apellidos' => 'Apellidos',
-			'dni' => 'Dni',
 			'direccion' => 'Direccion',
 			'fechaNacimiento' => 'Fecha Nacimiento',
 			'correo' => 'Correo',
 			'celular' => 'Celular',
 			'telefono' => 'Telefono',
-			'idlocal' => 'Idlocal',
-			'flg_activo' => 'Flg Activo',
-			'personalcol' => 'Personalcol',
+			
+			'flg_activo' => 'Activo',
 		);
 	}
 
@@ -105,7 +105,7 @@ class Personal extends CActiveRecord
 		$criteria->compare('idPersonal',$this->idPersonal);
 		$criteria->compare('nombres',$this->nombres,true);
 		$criteria->compare('apellidos',$this->apellidos,true);
-		$criteria->compare('dni',$this->dni,true);
+		
 		$criteria->compare('direccion',$this->direccion,true);
 		$criteria->compare('fechaNacimiento',$this->fechaNacimiento,true);
 		$criteria->compare('correo',$this->correo,true);
@@ -113,13 +113,18 @@ class Personal extends CActiveRecord
 		$criteria->compare('telefono',$this->telefono,true);
 		$criteria->compare('idlocal',$this->idlocal);
 		$criteria->compare('flg_activo',$this->flg_activo);
-		$criteria->compare('personalcol',$this->personalcol,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
 
+        public function getLocales(){
+            $locales = Local::model()->findAll();
+            
+            $usersArray = CHtml::listData($locales, 'idlocal','nombre');
+            return $usersArray;
+        }
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!

@@ -33,7 +33,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idcategoria'); ?>
-		<?php echo $form->textField($model,'idcategoria'); ?>
+		<?php echo $form->dropDownList($model,'idcategoria',$model->getCategorias()); ?>
 		<?php echo $form->error($model,'idcategoria'); ?>
 	</div>
 

@@ -24,7 +24,7 @@ $this->menu=array(
 		'idservicio',
 		'nombre',
 		'descripcion',
-		'idcategoria',
+		'categoria.nombre',
 		'precio',
 	),
 )); ?>

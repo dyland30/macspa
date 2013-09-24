@@ -9,10 +9,10 @@
  * @property string $contenido
  * @property string $div_id
  * @property integer $flg_activo
- * @property integer $Usuario_idUsuario
+ * @property integer $idusuario
  *
  * The followings are the available model relations:
- * @property Usuario $usuarioIdUsuario
+ * @property Usuario $idusuario0
  */
 class Seccion extends CActiveRecord
 {
@@ -32,13 +32,13 @@ class Seccion extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('flg_activo, Usuario_idUsuario', 'numerical', 'integerOnly'=>true),
+			array('flg_activo, idusuario', 'numerical', 'integerOnly'=>true),
 			array('titulo', 'length', 'max'=>200),
 			array('div_id', 'length', 'max'=>45),
 			array('contenido', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idseccion, titulo, contenido, div_id, flg_activo, Usuario_idUsuario', 'safe', 'on'=>'search'),
+			array('idseccion, titulo, contenido, div_id, flg_activo, idusuario', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,7 +50,7 @@ class Seccion extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'usuarioIdUsuario' => array(self::BELONGS_TO, 'Usuario', 'Usuario_idUsuario'),
+			'idusuario0' => array(self::BELONGS_TO, 'Usuario', 'idusuario'),
 		);
 	}
 
@@ -65,7 +65,7 @@ class Seccion extends CActiveRecord
 			'contenido' => 'Contenido',
 			'div_id' => 'Div',
 			'flg_activo' => 'Flg Activo',
-			'Usuario_idUsuario' => 'Usuario Id Usuario',
+			'idusuario' => 'Idusuario',
 		);
 	}
 
@@ -92,7 +92,7 @@ class Seccion extends CActiveRecord
 		$criteria->compare('contenido',$this->contenido,true);
 		$criteria->compare('div_id',$this->div_id,true);
 		$criteria->compare('flg_activo',$this->flg_activo);
-		$criteria->compare('Usuario_idUsuario',$this->Usuario_idUsuario);
+		$criteria->compare('idusuario',$this->idusuario);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

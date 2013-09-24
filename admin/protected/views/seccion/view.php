@@ -26,6 +26,6 @@ $this->menu=array(
 		'contenido',
 		'div_id',
 		'flg_activo',
-		'Usuario_idUsuario',
+		'idusuario',
 	),
 )); ?>

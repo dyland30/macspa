@@ -48,7 +48,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'idPersonal',
 		'nombres',
 		'apellidos',
-		'dni',
 		'direccion',
 		'fechaNacimiento',
 		/*
@@ -57,7 +56,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'telefono',
 		'idlocal',
 		'flg_activo',
-		'personalcol',
 		*/
 		array(
 			'class'=>'CButtonColumn',

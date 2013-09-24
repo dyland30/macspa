@@ -32,8 +32,6 @@ class Local extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idlocal', 'required'),
-			array('idlocal', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>45),
 			array('direccion', 'length', 'max'=>100),
 			array('telefono', 'length', 'max'=>20),

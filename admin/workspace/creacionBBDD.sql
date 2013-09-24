@@ -2,13 +2,16 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
+DROP SCHEMA IF EXISTS `macspa` ;
 CREATE SCHEMA IF NOT EXISTS `macspa` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
 USE `macspa` ;
 
 -- -----------------------------------------------------
--- Table `macspa`.`Usuario`
+-- Table `macspa`.`usuario`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `macspa`.`Usuario` (
+DROP TABLE IF EXISTS `macspa`.`usuario` ;
+
+CREATE  TABLE IF NOT EXISTS `macspa`.`usuario` (
   `idUsuario` INT NOT NULL AUTO_INCREMENT ,
   `login` VARCHAR(45) NULL ,
   `clave` VARCHAR(45) NULL ,
@@ -21,6 +24,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`categoria`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`categoria` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`categoria` (
   `idcategoria` INT NOT NULL AUTO_INCREMENT ,
   `nombre` VARCHAR(45) NULL ,
@@ -32,6 +37,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`servicio`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`servicio` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`servicio` (
   `idservicio` INT NOT NULL AUTO_INCREMENT ,
   `nombre` VARCHAR(45) NULL ,
@@ -51,6 +58,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`cliente`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`cliente` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`cliente` (
   `idcliente` INT NOT NULL AUTO_INCREMENT ,
   `nombres` VARCHAR(60) NULL ,
@@ -68,8 +77,10 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`local`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`local` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`local` (
-  `idlocal` INT NOT NULL ,
+  `idlocal` INT NOT NULL AUTO_INCREMENT ,
   `nombre` VARCHAR(45) NULL ,
   `direccion` VARCHAR(100) NULL ,
   `telefono` VARCHAR(20) NULL ,
@@ -80,6 +91,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`personal`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`personal` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`personal` (
   `idPersonal` INT NOT NULL ,
   `nombres` VARCHAR(45) NULL ,
@@ -92,7 +105,6 @@ CREATE  TABLE IF NOT EXISTS `macspa`.`personal` (
   `telefono` VARCHAR(20) NULL ,
   `idlocal` INT NULL ,
   `flg_activo` TINYINT(1) NULL DEFAULT true ,
-  `personalcol` VARCHAR(45) NULL ,
   PRIMARY KEY (`idPersonal`) ,
   INDEX `fk_personal_local1_idx` (`idlocal` ASC) ,
   CONSTRAINT `fk_personal_local1`
@@ -106,6 +118,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`personal_servicio`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`personal_servicio` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`personal_servicio` (
   `idPersonal` INT NOT NULL ,
   `idservicio` INT NOT NULL ,
@@ -129,6 +143,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`promocion`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`promocion` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`promocion` (
   `idpromocion` INT NOT NULL AUTO_INCREMENT ,
   `titulo` VARCHAR(45) NULL ,
@@ -145,11 +161,12 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`promocion_servicio`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`promocion_servicio` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`promocion_servicio` (
   `idpromocion` INT NOT NULL ,
   `idservicio` INT NOT NULL ,
   `flg_activo` TINYINT(1) NULL ,
-  `promocion_serviciocol` VARCHAR(45) NULL ,
   `precio_promo` DECIMAL(10,0) NULL ,
   PRIMARY KEY (`idpromocion`, `idservicio`) ,
   INDEX `fk_promocion_has_servicio_servicio1_idx` (`idservicio` ASC) ,
@@ -170,18 +187,20 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`seccion`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`seccion` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`seccion` (
   `idseccion` INT NOT NULL AUTO_INCREMENT ,
   `titulo` VARCHAR(200) NULL ,
   `contenido` TEXT NULL ,
   `div_id` VARCHAR(45) NULL ,
   `flg_activo` TINYINT(1) NULL DEFAULT true ,
-  `Usuario_idUsuario` INT NULL ,
+  `idusuario` INT NULL ,
   PRIMARY KEY (`idseccion`) ,
-  INDEX `fk_seccion_Usuario1_idx` (`Usuario_idUsuario` ASC) ,
+  INDEX `fk_seccion_Usuario1_idx` (`idusuario` ASC) ,
   CONSTRAINT `fk_seccion_Usuario1`
-    FOREIGN KEY (`Usuario_idUsuario` )
-    REFERENCES `macspa`.`Usuario` (`idUsuario` )
+    FOREIGN KEY (`idusuario` )
+    REFERENCES `macspa`.`usuario` (`idUsuario` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -190,6 +209,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`reserva`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`reserva` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`reserva` (
   `idreserva` INT NOT NULL ,
   `idcliente` INT NULL ,
@@ -219,6 +240,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`local_servicio`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`local_servicio` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`local_servicio` (
   `local_idlocal` INT NOT NULL ,
   `servicio_idservicio` INT NOT NULL ,
@@ -241,6 +264,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `macspa`.`reserva_servicio`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`reserva_servicio` ;
+
 CREATE  TABLE IF NOT EXISTS `macspa`.`reserva_servicio` (
   `reserva_idreserva` INT NOT NULL ,
   `servicio_idservicio` INT NOT NULL ,

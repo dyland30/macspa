@@ -37,8 +37,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Usuario_idUsuario'); ?>
-		<?php echo $form->textField($model,'Usuario_idUsuario'); ?>
+		<?php echo $form->label($model,'idusuario'); ?>
+		<?php echo $form->textField($model,'idusuario'); ?>
 	</div>
 
 	<div class="row buttons">
