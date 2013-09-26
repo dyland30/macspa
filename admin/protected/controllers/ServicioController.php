@@ -28,7 +28,7 @@ class ServicioController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','buscarservicios'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -143,6 +143,21 @@ class ServicioController extends Controller
 		));
 	}
 
+        public function actionBuscarServicios(){
+            
+            $filtro = "";
+            if(isset($_REQUEST['filtro'])){
+                $filtro = $_REQUEST['filtro'];
+                
+            } 
+            $criterio = new CDbCriteria(array(
+                'condition'=>'nombre LIKE :filtro',
+                'params'=>array(':filtro'=>"%$filtro%")));
+            
+            $servicios = Servicio::model()->findAll($criterio);
+            echo CJSON::encode($servicios);
+            
+        }
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.

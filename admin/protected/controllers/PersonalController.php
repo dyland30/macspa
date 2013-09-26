@@ -28,7 +28,7 @@ class PersonalController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','obtenerservicios','agregarservicios','removerservicio'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -170,4 +170,59 @@ class PersonalController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionObtenerServicios(){
+            $servicios = null;
+            if(isset($_REQUEST['id'])){
+                $id = $_REQUEST['id'];
+                $model=Personal::model()->findByPk($id);
+                $servicios = $model->servicios;
+                
+            }
+            echo CJSON::encode($servicios);
+        }
+        
+        public function actionAgregarServicios(){
+            $mensaje ="OK";
+            try{
+                
+            if(isset($_REQUEST['idServicio'])&& isset($_REQUEST['idPersonal'])){
+                $idPersonal = $_REQUEST['idPersonal'];
+                $idServicio = $_REQUEST['idServicio'];
+                $query ="insert into personal_servicio(idPersonal,idservicio,flg_activo) values($idPersonal,$idServicio,1)";
+                //ejecutar sql
+                Yii::app()->db->createCommand($query)->execute();
+                
+            }
+                
+            } catch(Exception $ex){
+                
+                $mensaje =$ex->getMessage();
+            }            
+            
+            echo $mensaje;
+        }
+        
+         public function actionRemoverServicio(){
+            $mensaje ="OK";
+            try{
+                
+            if(isset($_REQUEST['idServicio'])&& isset($_REQUEST['idPersonal'])){
+                $idPersonal = $_REQUEST['idPersonal'];
+                $idServicio = $_REQUEST['idServicio'];
+                $query ="delete from personal_servicio where idPersonal=$idPersonal and idservicio=$idServicio";
+                //ejecutar sql
+                Yii::app()->db->createCommand($query)->execute();
+                
+            }
+                
+            } catch(Exception $ex){
+                
+                $mensaje =$ex->getMessage();
+            }            
+            
+            echo $mensaje;
+        }
+        
+        
 }
