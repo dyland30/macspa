@@ -28,7 +28,7 @@ class PromocionController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','obtenerservicios','removerservicio','agregarservicios'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -158,6 +158,8 @@ class PromocionController extends Controller
 		return $model;
 	}
 
+
+
 	/**
 	 * Performs the AJAX validation.
 	 * @param Promocion $model the model to be validated
@@ -170,4 +172,63 @@ class PromocionController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+	
+    public function actionAgregarServicios(){
+        $mensaje ="OK";
+        try{
+            
+        if(isset($_REQUEST['idServicio'])&& isset($_REQUEST['idPromocion'])){
+            $idPromocion = $_REQUEST['idPromocion'];
+            $idServicio = $_REQUEST['idServicio'];
+			
+			$precio = isset($_REQUEST['precio']) ? $_REQUEST['precio'] : 0;
+			
+            $query ="insert into promocion_servicio(idpromocion,idservicio,flg_activo,precio_promo) values($idPromocion,$idServicio,1,$precio)";
+            //ejecutar sql
+            Yii::app()->db->createCommand($query)->execute();
+            
+        }
+            
+        } catch(Exception $ex){
+            
+            $mensaje =$ex->getMessage();
+        }            
+        
+        echo $mensaje;
+    }
+    
+     public function actionRemoverServicio(){
+        $mensaje ="OK";
+        try{
+            
+        if(isset($_REQUEST['idServicio'])&& isset($_REQUEST['idPromocion'])){
+            $idPromocion = $_REQUEST['idPromocion'];
+            $idServicio = $_REQUEST['idServicio'];
+            $query ="delete from promocion_servicio where idpromocion=$idPromocion and idservicio=$idServicio";
+            //ejecutar sql
+            Yii::app()->db->createCommand($query)->execute();
+            
+        }
+            
+        } catch(Exception $ex){
+            
+            $mensaje =$ex->getMessage();
+        }            
+        
+        echo $mensaje;
+    }
+	
+	public function actionObtenerServicios(){
+        $servicios = null;
+        if(isset($_REQUEST['id'])){
+            $id = $_REQUEST['id'];
+            $model=Promocion::model()->findByPk($id);
+            $servicios = $model->servicios;
+            
+        }
+        echo CJSON::encode($servicios);
+    }
+	
+	
 }
