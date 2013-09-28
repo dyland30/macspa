@@ -70,8 +70,15 @@ class PromocionController extends Controller
 		if(isset($_POST['Promocion']))
 		{
 			$model->attributes=$_POST['Promocion'];
-			if($model->save())
+			$model->rutaimagen=CUploadedFile::getInstance($model,'rutaimagen');
+			if($model->save()){
+				if(isset($model->rutaimagen)){
+					$nombre = $model->idpromocion +"."+$model->rutaimagen->extensionName;
+					$model->rutaimagen->saveAs("images/promociones/$nombre");
+				}
 				$this->redirect(array('view','id'=>$model->idpromocion));
+			}
+				
 		}
 
 		$this->render('create',array(
@@ -94,8 +101,16 @@ class PromocionController extends Controller
 		if(isset($_POST['Promocion']))
 		{
 			$model->attributes=$_POST['Promocion'];
-			if($model->save())
+			$model->rutaimagen=CUploadedFile::getInstance($model,'rutaimagen');
+			if($model->save()){
+				if(isset($model->rutaimagen)){
+					$nombre = $model->idpromocion +"."+$model->rutaimagen->extensionName;
+					$model->rutaimagen->saveAs("images/promociones/$nombre");
+				}
+				
 				$this->redirect(array('view','id'=>$model->idpromocion));
+			}
+				
 		}
 
 		$this->render('update',array(

@@ -18,6 +18,8 @@
  */
 class Promocion extends CActiveRecord
 {
+	public $rutaimagen;
+	
 	/**
 	 * @return string the associated database table name
 	 */
@@ -34,6 +36,8 @@ class Promocion extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('titulo','required'),
+			array('rutaimagen', 'file', 'types'=>'jpg, gif, png'),
 			array('orden, flg_activo', 'numerical', 'integerOnly'=>true),
 			array('titulo', 'length', 'max'=>45),
 			array('imagen', 'length', 'max'=>200),
@@ -70,6 +74,7 @@ class Promocion extends CActiveRecord
 			'fch_fin' => 'Fch Fin',
 			'orden' => 'Orden',
 			'flg_activo' => 'Flg Activo',
+			'rutaimagen'=> 'Imagen'
 		);
 	}
 

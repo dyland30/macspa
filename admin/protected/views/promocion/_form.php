@@ -12,6 +12,7 @@
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
+	'htmlOptions' => array('enctype' => 'multipart/form-data'),
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -32,9 +33,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'imagen'); ?>
-		<?php echo $form->textField($model,'imagen',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'imagen'); ?>
+		<?php echo $form->labelEx($model, 'rutaimagen'); ?>
+		<?php echo $form->fileField($model, 'rutaimagen'); ?>
+		<?php echo $form->error($model, 'rutaimagen');	?>
 	</div>
 
 	<div class="row">
