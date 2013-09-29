@@ -70,11 +70,31 @@ class PromocionController extends Controller
 		if(isset($_POST['Promocion']))
 		{
 			$model->attributes=$_POST['Promocion'];
-			$model->rutaimagen=CUploadedFile::getInstance($model,'rutaimagen');
+			$img = CUploadedFile::getInstance($model,'rutaimagen');
+			$extension ="";
+			if($img){
+				$model->rutaimagen= $img;
+				$extension = $img->getExtensionName();
+			}
+				
 			if($model->save()){
 				if(isset($model->rutaimagen)){
-					$nombre = $model->idpromocion +"."+$model->rutaimagen->extensionName;
-					$model->rutaimagen->saveAs("images/promociones/$nombre");
+					
+					$nombre = $model->idpromocion.".".$extension;
+					
+					$model->rutaimagen->saveAs("images/promociones/_ORIG_$nombre");
+					$model->imagen = $nombre;
+					
+					if(file_exists("images/promociones/$nombre")){
+						@unlink("images/promociones/$nombre");
+					}
+					
+					$resizeObj = new resize("images/promociones/_ORIG_$nombre");
+					$resizeObj -> resizeImage(480, 260, 0);
+					$resizeObj -> saveImage("images/promociones/$nombre", 100);
+					
+					
+					$model->save();
 				}
 				$this->redirect(array('view','id'=>$model->idpromocion));
 			}
@@ -101,13 +121,34 @@ class PromocionController extends Controller
 		if(isset($_POST['Promocion']))
 		{
 			$model->attributes=$_POST['Promocion'];
-			$model->rutaimagen=CUploadedFile::getInstance($model,'rutaimagen');
+			$img = CUploadedFile::getInstance($model,'rutaimagen');
+			$extension ="";
+			if($img){
+				$model->rutaimagen= $img;
+				$extension = $img->getExtensionName();
+				
+			}
+				
 			if($model->save()){
 				if(isset($model->rutaimagen)){
-					$nombre = $model->idpromocion +"."+$model->rutaimagen->extensionName;
-					$model->rutaimagen->saveAs("images/promociones/$nombre");
+					//eliminar el archivo si existe
+					
+					$nombre = $model->idpromocion.".".$extension;
+					
+					$model->rutaimagen->saveAs("images/promociones/_ORIG_$nombre");
+					$model->imagen = $nombre;
+					
+					if(file_exists("images/promociones/$nombre")){
+						@unlink("images/promociones/$nombre");
+					}
+					
+					$resizeObj = new resize("images/promociones/_ORIG_$nombre");
+					$resizeObj -> resizeImage(480, 260, 0);
+					$resizeObj -> saveImage("images/promociones/$nombre", 100);
+					
+					
+					$model->save();
 				}
-				
 				$this->redirect(array('view','id'=>$model->idpromocion));
 			}
 				

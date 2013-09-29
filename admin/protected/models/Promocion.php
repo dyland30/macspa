@@ -69,7 +69,7 @@ class Promocion extends CActiveRecord
 			'idpromocion' => 'Idpromocion',
 			'titulo' => 'Titulo',
 			'contenido' => 'Contenido',
-			'imagen' => 'Imagen',
+			'imagen' => 'Nombre Imagen',
 			'fch_inicio' => 'Fch Inicio',
 			'fch_fin' => 'Fch Fin',
 			'orden' => 'Orden',

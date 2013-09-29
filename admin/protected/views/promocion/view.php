@@ -32,6 +32,8 @@ $this->menu=array(
 	),
 )); ?>
 
+<h3>Imagen</h3>
+<?php echo CHtml::image(Yii::app()->request->baseUrl."/images/promociones/".$model->imagen,"Promocion"); ?>
 <h3>Servicios incluidos</h3>
 
 <div id ="frm_servicios">
