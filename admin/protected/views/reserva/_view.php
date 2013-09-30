@@ -34,8 +34,6 @@
 	<br />
 
 	<?php /*
-	
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idlocal')); ?>:</b>
 	<?php echo CHtml::encode($data->idlocal); ?>
 	<br />

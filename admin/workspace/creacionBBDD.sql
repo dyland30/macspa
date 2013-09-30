@@ -212,14 +212,13 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `macspa`.`reserva` ;
 
 CREATE  TABLE IF NOT EXISTS `macspa`.`reserva` (
-  `idreserva` INT NOT NULL ,
+  `idreserva` INT NOT NULL AUTO_INCREMENT,
   `idcliente` INT NULL ,
   `fch_programada` DATETIME NULL ,
   `fch_alternativa` DATETIME NULL ,
   `fch_registro` DATETIME NULL ,
   `precio_total` DECIMAL(10,0) NULL ,
   `estado` CHAR(1) NULL COMMENT 'R -> Registrado\nV -> Vencido\nA -> Atendido\nN -> Anulado\n' ,
-  `reservacol` VARCHAR(45) NULL ,
   `idlocal` INT NULL ,
   PRIMARY KEY (`idreserva`) ,
   INDEX `fk_reserva_cliente1_idx` (`idcliente` ASC) ,
@@ -283,6 +282,43 @@ CREATE  TABLE IF NOT EXISTS `macspa`.`reserva_servicio` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `macspa`.`galeria`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`galeria` ;
+
+CREATE  TABLE IF NOT EXISTS `macspa`.`galeria` (
+  `idgaleria` INT NOT NULL AUTO_INCREMENT ,
+  `descripcion` VARCHAR(100) NULL ,
+  `fch_creacion` DATETIME NULL,
+  PRIMARY KEY (`idgaleria`)  
+  )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `macspa`.`foto`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `macspa`.`foto` ;
+
+CREATE  TABLE IF NOT EXISTS `macspa`.`foto` (
+  `idfoto` INT NOT NULL AUTO_INCREMENT ,
+  `titulo` VARCHAR(45) NULL ,
+  `img_orig` VARCHAR(100) NULL ,
+  `img_small` VARCHAR(100) NULL ,
+  `fch_creacion` DATETIME NULL ,
+  `idgaleria` INT NULL ,
+  PRIMARY KEY (`idfoto`) ,
+  INDEX `fk_foto_galeria_idx` (`idgaleria` ASC) ,
+  CONSTRAINT `fk_foto_galeria`
+    FOREIGN KEY (`idgaleria` )
+    REFERENCES `macspa`.`galeria` (`idgaleria` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
 
 USE `macspa` ;
 

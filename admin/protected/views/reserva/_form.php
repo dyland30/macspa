@@ -20,12 +20,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'idreserva'); ?>
-		<?php echo $form->textField($model,'idreserva'); ?>
-		<?php echo $form->error($model,'idreserva'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'idcliente'); ?>
 		<?php echo $form->textField($model,'idcliente'); ?>
 		<?php echo $form->error($model,'idcliente'); ?>
@@ -60,7 +54,6 @@
 		<?php echo $form->textField($model,'estado',array('size'=>1,'maxlength'=>1)); ?>
 		<?php echo $form->error($model,'estado'); ?>
 	</div>
-
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idlocal'); ?>

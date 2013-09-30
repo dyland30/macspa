@@ -23,6 +23,8 @@ $this->pageTitle=Yii::app()->name;
     <li><?php echo CHtml::link("Administrar Empleados",$this->createUrl('Personal/Index')); ?></li>
     <li><?php echo CHtml::link("Administrar Clientes",$this->createUrl('Cliente/Index')); ?></li>
     <li><?php echo CHtml::link("Reservas",$this->createUrl('Reserva/Index')); ?></li>
+	<li><?php echo CHtml::link("Fotos",$this->createUrl('Foto/Index')); ?></li>
+	<li><?php echo CHtml::link("Galeria",$this->createUrl('Galeria/Index')); ?></li>
 </ul>
 
 <p>For more details on how to further develop this application, please read

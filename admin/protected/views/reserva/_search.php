@@ -46,7 +46,6 @@
 		<?php echo $form->textField($model,'estado',array('size'=>1,'maxlength'=>1)); ?>
 	</div>
 
-
 	<div class="row">
 		<?php echo $form->label($model,'idlocal'); ?>
 		<?php echo $form->textField($model,'idlocal'); ?>

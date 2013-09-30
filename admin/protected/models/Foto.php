@@ -1,31 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "reserva".
+ * This is the model class for table "foto".
  *
- * The followings are the available columns in table 'reserva':
- * @property integer $idreserva
- * @property integer $idcliente
- * @property string $fch_programada
- * @property string $fch_alternativa
- * @property string $fch_registro
- * @property string $precio_total
- * @property string $estado
- * @property integer $idlocal
+ * The followings are the available columns in table 'foto':
+ * @property integer $idfoto
+ * @property string $titulo
+ * @property string $img_orig
+ * @property string $img_small
+ * @property string $fch_creacion
+ * @property integer $idgaleria
  *
  * The followings are the available model relations:
- * @property Cliente $idcliente0
- * @property Local $idlocal0
- * @property Servicio[] $servicios
+ * @property Galeria $idgaleria0
  */
-class Reserva extends CActiveRecord
+class Foto extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'reserva';
+		return 'foto';
 	}
 
 	/**
@@ -36,13 +32,13 @@ class Reserva extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idcliente, idlocal', 'numerical', 'integerOnly'=>true),
-			array('precio_total', 'length', 'max'=>10),
-			array('estado', 'length', 'max'=>1),
-			array('fch_programada, fch_alternativa, fch_registro', 'safe'),
+			array('idgaleria', 'numerical', 'integerOnly'=>true),
+			array('titulo', 'length', 'max'=>45),
+			array('img_orig, img_small', 'length', 'max'=>100),
+			array('fch_creacion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idreserva, idcliente, fch_programada, fch_alternativa, fch_registro, precio_total, estado, idlocal', 'safe', 'on'=>'search'),
+			array('idfoto, titulo, img_orig, img_small, fch_creacion, idgaleria', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,9 +50,7 @@ class Reserva extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idcliente0' => array(self::BELONGS_TO, 'Cliente', 'idcliente'),
-			'idlocal0' => array(self::BELONGS_TO, 'Local', 'idlocal'),
-			'servicios' => array(self::MANY_MANY, 'Servicio', 'reserva_servicio(reserva_idreserva, servicio_idservicio)'),
+			'idgaleria0' => array(self::BELONGS_TO, 'Galeria', 'idgaleria'),
 		);
 	}
 
@@ -66,14 +60,12 @@ class Reserva extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idreserva' => 'Idreserva',
-			'idcliente' => 'Idcliente',
-			'fch_programada' => 'Fch Programada',
-			'fch_alternativa' => 'Fch Alternativa',
-			'fch_registro' => 'Fch Registro',
-			'precio_total' => 'Precio Total',
-			'estado' => 'Estado',
-			'idlocal' => 'Idlocal',
+			'idfoto' => 'Idfoto',
+			'titulo' => 'Titulo',
+			'img_orig' => 'Img Orig',
+			'img_small' => 'Img Small',
+			'fch_creacion' => 'Fch Creacion',
+			'idgaleria' => 'Idgaleria',
 		);
 	}
 
@@ -95,14 +87,12 @@ class Reserva extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idreserva',$this->idreserva);
-		$criteria->compare('idcliente',$this->idcliente);
-		$criteria->compare('fch_programada',$this->fch_programada,true);
-		$criteria->compare('fch_alternativa',$this->fch_alternativa,true);
-		$criteria->compare('fch_registro',$this->fch_registro,true);
-		$criteria->compare('precio_total',$this->precio_total,true);
-		$criteria->compare('estado',$this->estado,true);
-		$criteria->compare('idlocal',$this->idlocal);
+		$criteria->compare('idfoto',$this->idfoto);
+		$criteria->compare('titulo',$this->titulo,true);
+		$criteria->compare('img_orig',$this->img_orig,true);
+		$criteria->compare('img_small',$this->img_small,true);
+		$criteria->compare('fch_creacion',$this->fch_creacion,true);
+		$criteria->compare('idgaleria',$this->idgaleria);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -113,7 +103,7 @@ class Reserva extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Reserva the static model class
+	 * @return Foto the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

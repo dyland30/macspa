@@ -1,31 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "reserva".
+ * This is the model class for table "galeria".
  *
- * The followings are the available columns in table 'reserva':
- * @property integer $idreserva
- * @property integer $idcliente
- * @property string $fch_programada
- * @property string $fch_alternativa
- * @property string $fch_registro
- * @property string $precio_total
- * @property string $estado
- * @property integer $idlocal
+ * The followings are the available columns in table 'galeria':
+ * @property integer $idgaleria
+ * @property string $descripcion
+ * @property string $fch_creacion
  *
  * The followings are the available model relations:
- * @property Cliente $idcliente0
- * @property Local $idlocal0
- * @property Servicio[] $servicios
+ * @property Foto[] $fotos
  */
-class Reserva extends CActiveRecord
+class Galeria extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'reserva';
+		return 'galeria';
 	}
 
 	/**
@@ -36,13 +29,11 @@ class Reserva extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idcliente, idlocal', 'numerical', 'integerOnly'=>true),
-			array('precio_total', 'length', 'max'=>10),
-			array('estado', 'length', 'max'=>1),
-			array('fch_programada, fch_alternativa, fch_registro', 'safe'),
+			array('descripcion', 'length', 'max'=>100),
+			array('fch_creacion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idreserva, idcliente, fch_programada, fch_alternativa, fch_registro, precio_total, estado, idlocal', 'safe', 'on'=>'search'),
+			array('idgaleria, descripcion, fch_creacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,9 +45,7 @@ class Reserva extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idcliente0' => array(self::BELONGS_TO, 'Cliente', 'idcliente'),
-			'idlocal0' => array(self::BELONGS_TO, 'Local', 'idlocal'),
-			'servicios' => array(self::MANY_MANY, 'Servicio', 'reserva_servicio(reserva_idreserva, servicio_idservicio)'),
+			'fotos' => array(self::HAS_MANY, 'Foto', 'idgaleria'),
 		);
 	}
 
@@ -66,14 +55,9 @@ class Reserva extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idreserva' => 'Idreserva',
-			'idcliente' => 'Idcliente',
-			'fch_programada' => 'Fch Programada',
-			'fch_alternativa' => 'Fch Alternativa',
-			'fch_registro' => 'Fch Registro',
-			'precio_total' => 'Precio Total',
-			'estado' => 'Estado',
-			'idlocal' => 'Idlocal',
+			'idgaleria' => 'Idgaleria',
+			'descripcion' => 'Descripcion',
+			'fch_creacion' => 'Fch Creacion',
 		);
 	}
 
@@ -95,14 +79,9 @@ class Reserva extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idreserva',$this->idreserva);
-		$criteria->compare('idcliente',$this->idcliente);
-		$criteria->compare('fch_programada',$this->fch_programada,true);
-		$criteria->compare('fch_alternativa',$this->fch_alternativa,true);
-		$criteria->compare('fch_registro',$this->fch_registro,true);
-		$criteria->compare('precio_total',$this->precio_total,true);
-		$criteria->compare('estado',$this->estado,true);
-		$criteria->compare('idlocal',$this->idlocal);
+		$criteria->compare('idgaleria',$this->idgaleria);
+		$criteria->compare('descripcion',$this->descripcion,true);
+		$criteria->compare('fch_creacion',$this->fch_creacion,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -113,7 +92,7 @@ class Reserva extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Reserva the static model class
+	 * @return Galeria the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
