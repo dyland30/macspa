@@ -16,10 +16,10 @@ $this->menu = array(
 );
 ?>
 
-<h1>View Personal #<?php echo $model->idPersonal; ?></h1>
+<h1>Empleado Código: <?php echo $model->idPersonal; ?></h1>
 
 <?php
-$this->widget('zii.widgets.CDetailView', array(
+$this->widget('bootstrap.widgets.TbDetailView', array(
     'data' => $model,
     'attributes' => array(
         'idPersonal',

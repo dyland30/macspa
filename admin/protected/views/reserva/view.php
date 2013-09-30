@@ -16,9 +16,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Reserva #<?php echo $model->idreserva; ?></h1>
+<h1>Número de Reserva: <?php echo $model->idreserva; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idreserva',

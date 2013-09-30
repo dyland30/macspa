@@ -1,11 +1,14 @@
 <?php
 
 // uncomment the following to define a path alias
-// Yii::setPathOfAlias('local','path/to/local-folder');
+ Yii::setPathOfAlias('bootstrap',dirname(__FILE__).'/../extensions/bootstrap');
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+        'theme'=>'bootstrap',
+       
+    
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'MAC Salon & SPA - Sitio de Administración',
 
@@ -22,6 +25,7 @@ return array(
 		// uncomment the following to enable the Gii tool
 		
 		'gii'=>array(
+                        'generatorPaths'=>array('bootstrap.gii',),
 			'class'=>'system.gii.GiiModule',
 			'password'=>'qwerty',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
@@ -32,6 +36,7 @@ return array(
 
 	// application components
 	'components'=>array(
+                'bootstrap'=>array('class'=>'bootstrap.components.Bootstrap'),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

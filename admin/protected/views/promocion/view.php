@@ -16,9 +16,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Promocion #<?php echo $model->idpromocion; ?></h1>
+<h1>Código Promoción: <?php echo $model->idpromocion; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idpromocion',

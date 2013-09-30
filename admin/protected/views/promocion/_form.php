@@ -6,65 +6,33 @@
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'promocion-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
-	'htmlOptions' => array('enctype' => 'multipart/form-data'),
-	'enableAjaxValidation'=>false,
-)); ?>
+    <?php
+    $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+        'id' => 'promocion-form',
+        // Please note: When you enable ajax validation, make sure the corresponding
+        // controller action is handling ajax validation correctly.
+        // There is a call to performAjaxValidation() commented in generated controller code.
+        // See class documentation of CActiveForm for details on this.
+        'htmlOptions' => array('enctype' => 'multipart/form-data', 'class' => 'well'),
+        'enableAjaxValidation' => false,
+    ));
+    ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+    <p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+    <?php echo $form->errorSummary($model); ?>
+    <?php echo $form->textFieldRow($model, 'titulo', array('size' => 45, 'maxlength' => 45, 'class' => 'span3')); ?>
+    <?php echo $form->textAreaRow($model, 'contenido', array('rows' => 6, 'cols' => 50, 'class' => 'span3')); ?>
+    <?php echo $form->fileFieldRow($model, 'rutaimagen', array('class' => 'span3')); ?>
+    <?php echo $form->textFieldRow($model, 'fch_inicio', array('class' => 'span3')); ?>
+    <?php echo $form->textFieldRow($model, 'fch_fin', array('class' => 'span3')); ?>
+<?php echo $form->textFieldRow($model, 'orden', array('class' => 'span3')); ?>
+        <?php echo $form->textFieldRow($model, 'flg_activo', array('class' => 'span3')); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'titulo'); ?>
-		<?php echo $form->textField($model,'titulo',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'titulo'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'contenido'); ?>
-		<?php echo $form->textArea($model,'contenido',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'contenido'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model, 'rutaimagen'); ?>
-		<?php echo $form->fileField($model, 'rutaimagen'); ?>
-		<?php echo $form->error($model, 'rutaimagen');	?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fch_inicio'); ?>
-		<?php echo $form->textField($model,'fch_inicio'); ?>
-		<?php echo $form->error($model,'fch_inicio'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fch_fin'); ?>
-		<?php echo $form->textField($model,'fch_fin'); ?>
-		<?php echo $form->error($model,'fch_fin'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'orden'); ?>
-		<?php echo $form->textField($model,'orden'); ?>
-		<?php echo $form->error($model,'orden'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'flg_activo'); ?>
-		<?php echo $form->textField($model,'flg_activo'); ?>
-		<?php echo $form->error($model,'flg_activo'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
+    <div class="form-actions">
+<?php $this->widget('bootstrap.widgets.TbButton', array('buttonType' => 'submit', 'type' => 'primary', 'label' => 'Submit')); ?>
+    <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType' => 'reset', 'label' => 'Reset')); ?>
+    </div>
 
 <?php $this->endWidget(); ?>
 

@@ -81,17 +81,20 @@ class PromocionController extends Controller
 				if(isset($model->rutaimagen)){
 					
 					$nombre = $model->idpromocion.".".$extension;
-					
-					$model->rutaimagen->saveAs("images/promociones/_ORIG_$nombre");
+					//crear carpeta promocion si no existe
+                                        if (!file_exists(Yii::app()->basePath.DIRECTORY_SEPARATOR.'../images/promociones')) {
+                                                mkdir('path/to/directory', 0755, true);
+                                        }
+					$model->rutaimagen->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/_ORIG_$nombre");
 					$model->imagen = $nombre;
 					
-					if(file_exists("images/promociones/$nombre")){
-						@unlink("images/promociones/$nombre");
+					if(file_exists(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/$nombre")){
+						@unlink(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/$nombre");
 					}
 					
-					$resizeObj = new resize("images/promociones/_ORIG_$nombre");
+					$resizeObj = new resize(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/_ORIG_$nombre");
 					$resizeObj -> resizeImage(480, 260, 0);
-					$resizeObj -> saveImage("images/promociones/$nombre", 100);
+					$resizeObj -> saveImage(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/$nombre", 100);
 					
 					
 					$model->save();
@@ -134,17 +137,20 @@ class PromocionController extends Controller
 					//eliminar el archivo si existe
 					
 					$nombre = $model->idpromocion.".".$extension;
+                                        if (!file_exists(Yii::app()->basePath.DIRECTORY_SEPARATOR.'../images/promociones')) {
+                                                mkdir('path/to/directory', 0755, true);
+                                        }
 					
-					$model->rutaimagen->saveAs("images/promociones/_ORIG_$nombre");
+					$model->rutaimagen->saveAs(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/_ORIG_$nombre");
 					$model->imagen = $nombre;
 					
-					if(file_exists("images/promociones/$nombre")){
-						@unlink("images/promociones/$nombre");
+					if(file_exists(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/$nombre")){
+						@unlink(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/$nombre");
 					}
 					
-					$resizeObj = new resize("images/promociones/_ORIG_$nombre");
+					$resizeObj = new resize(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/_ORIG_$nombre");
 					$resizeObj -> resizeImage(480, 260, 0);
-					$resizeObj -> saveImage("images/promociones/$nombre", 100);
+					$resizeObj -> saveImage(Yii::app()->basePath.DIRECTORY_SEPARATOR."../images/promociones/$nombre", 100);
 					
 					
 					$model->save();

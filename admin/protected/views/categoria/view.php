@@ -16,9 +16,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Categoria #<?php echo $model->idcategoria; ?></h1>
+<h1>Categoría Código: <?php echo $model->idcategoria; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idcategoria',

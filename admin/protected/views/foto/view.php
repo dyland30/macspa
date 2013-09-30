@@ -16,9 +16,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Foto #<?php echo $model->idfoto; ?></h1>
+<h1>Foto Nro: <?php echo $model->idfoto; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idfoto',

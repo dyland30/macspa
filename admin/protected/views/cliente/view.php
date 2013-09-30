@@ -16,9 +16,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Cliente #<?php echo $model->idcliente; ?></h1>
+<h1>Cliente Código:<?php echo $model->idcliente; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idcliente',

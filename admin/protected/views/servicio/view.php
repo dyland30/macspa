@@ -16,9 +16,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Servicio #<?php echo $model->idservicio; ?></h1>
+<h1>Código de Servicio: <?php echo $model->idservicio; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idservicio',
