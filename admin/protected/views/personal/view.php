@@ -43,7 +43,7 @@ $this->widget('bootstrap.widgets.TbDetailView', array(
 
 </div>
 <div id="servicios">
-    <table border="0" id="tb_servicios">
+    <table id="tb_servicios" class="items table table-striped table-bordered table-condensed">
         <thead>
             <tr>
                 <th>Servicio</th>
@@ -67,7 +67,7 @@ $this->widget('bootstrap.widgets.TbDetailView', array(
 
 <div id ="frm_buscar">
     <p>Buscar: <input type="text" id="txt_buscar"/> <input type="button" id="frm_buscar_btn_buscar" value="Buscar"/></p>
-    <table border="0" id="tb_buscar">
+    <table id="tb_buscar" class="items table table-striped table-bordered table-condensed">
         <thead>
             <tr>
                 <th>Nombre</th>
