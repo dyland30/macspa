@@ -19,6 +19,9 @@ class Foto extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+    
+    public $rutaimagen;
+    
 	public function tableName()
 	{
 		return 'foto';
@@ -32,10 +35,12 @@ class Foto extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+                    
 			array('idgaleria', 'numerical', 'integerOnly'=>true),
+                        //array('rutaimagen', 'file', 'types' => 'jpg, gif, png'),
 			array('titulo', 'length', 'max'=>45),
 			array('img_orig, img_small', 'length', 'max'=>100),
-			array('fch_creacion', 'safe'),
+			
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('idfoto, titulo, img_orig, img_small, fch_creacion, idgaleria', 'safe', 'on'=>'search'),
@@ -62,10 +67,11 @@ class Foto extends CActiveRecord
 		return array(
 			'idfoto' => 'Idfoto',
 			'titulo' => 'Titulo',
-			'img_orig' => 'Img Orig',
-			'img_small' => 'Img Small',
-			'fch_creacion' => 'Fch Creacion',
+			'img_orig' => 'Imagen Original',
+			'img_small' => 'Imgagen Small',
+			'fch_creacion' => 'Fecha Creacion',
 			'idgaleria' => 'Idgaleria',
+                        'rutaimagen' => 'Imagen'
 		);
 	}
 
@@ -98,6 +104,13 @@ class Foto extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+         public function getGalerias(){
+            $lista = Galeria::model()->findAll();
+            
+            $array = CHtml::listData($lista, 'idgaleria','descripcion');
+            return $array;
+        }
 
 	/**
 	 * Returns the static model of the specified AR class.

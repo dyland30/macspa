@@ -24,7 +24,6 @@
 
     <?php echo $form->textFieldRow($model, 'descripcion', array('size' => 60, 'maxlength' => 100,'class'=>'span3')); ?>
 
-    <?php echo $form->textFieldRow($model, 'fch_creacion',array('class'=>'span3')); ?>
 
     <div class="form-actions">
 <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType' => 'submit', 'type' => 'primary', 'label' => 'Submit')); ?>

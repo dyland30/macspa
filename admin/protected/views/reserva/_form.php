@@ -23,9 +23,9 @@
     <?php echo $form->errorSummary($model); ?>
 
     <?php echo $form->textFieldRow($model, 'idcliente', array('class' => 'span3')); ?>
-    <?php echo $form->textFieldRow($model, 'fch_programada', array('class' => 'span3')); ?>
-    <?php echo $form->textFieldRow($model, 'fch_alternativa', array('class' => 'span3')); ?>
-    <?php echo $form->textFieldRow($model, 'fch_registro', array('class' => 'span3')); ?>
+    <?php echo $form->textFieldRow($model, 'fch_programada', array('class' => 'span3 dp_fecha')); ?>
+    <?php echo $form->textFieldRow($model, 'fch_alternativa', array('class' => 'span3 dp_fecha')); ?>
+    <?php echo $form->textFieldRow($model, 'fch_registro', array('class' => 'span3 dp_fecha')); ?>
     <?php echo $form->textFieldRow($model, 'precio_total', array('size' => 10, 'maxlength' => 10, 'class' => 'span3')); ?>
     <?php echo $form->textFieldRow($model, 'estado', array('size' => 1, 'maxlength' => 1, 'class' => 'span3')); ?>
     <?php echo $form->textFieldRow($model, 'idlocal', array('class' => 'span3')); ?>

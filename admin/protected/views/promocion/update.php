@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Promocion', 'url'=>array('index')),
-	array('label'=>'Create Promocion', 'url'=>array('create')),
-	array('label'=>'View Promocion', 'url'=>array('view', 'id'=>$model->idpromocion)),
-	array('label'=>'Manage Promocion', 'url'=>array('admin')),
+	array('label'=>'Listar Promociones', 'url'=>array('index')),
+	array('label'=>'Crear Promoción', 'url'=>array('create')),
+	array('label'=>'Ver Promoción', 'url'=>array('view', 'id'=>$model->idpromocion)),
+	array('label'=>'Administrar Promoción', 'url'=>array('admin')),
 );
 ?>
 

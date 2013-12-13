@@ -8,8 +8,8 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-    array('label' => 'List Promocion', 'url' => array('index')),
-    array('label' => 'Create Promocion', 'url' => array('create')),
+    array('label' => 'Listar Promociones', 'url' => array('index')),
+    array('label' => 'Nueva Promocion', 'url' => array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

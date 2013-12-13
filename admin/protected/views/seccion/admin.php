@@ -8,8 +8,8 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-    array('label' => 'List Seccion', 'url' => array('index')),
-    array('label' => 'Create Seccion', 'url' => array('create')),
+    array('label' => 'Listar Páginas', 'url' => array('index')),
+    array('label' => 'Crear Página', 'url' => array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -51,7 +51,11 @@ $this->widget('bootstrap.widgets.TbGridView', array(
     'columns' => array(
         'idseccion',
         'titulo',
-        'contenido',
+        array(
+            'header'=> 'Contenido',
+            'type' => 'raw',
+            'value' => Chtml::decode($model->contenido)
+        ),
         'div_id',
         'flg_activo',
         'idusuario',

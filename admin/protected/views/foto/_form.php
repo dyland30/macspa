@@ -19,12 +19,10 @@
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
 	<?php echo $form->textFieldRow($model,'titulo',array('size'=>45,'maxlength'=>45,'class'=>'span3')); ?>
-	<?php echo $form->textFieldRow($model,'img_orig',array('size'=>60,'maxlength'=>100,'class'=>'span3')); ?>
-	<?php echo $form->textFieldRow($model,'img_small',array('size'=>60,'maxlength'=>100,'class'=>'span3')); ?>
-	<?php echo $form->textFieldRow($model,'fch_creacion',array('class'=>'span3')); ?>
-	<?php echo $form->textFieldRow($model,'idgaleria',array('class'=>'span3')); ?>
+        <?php echo $form->fileFieldRow($model, 'rutaimagen', array('class' => 'span3')); ?>
+        <?php echo $form->dropDownListRow($model, 'idgaleria', $model->getGalerias(), array('class' => 'span3')); ?>
+	
 	
 <div class="form-actions">
     <?php $this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'type'=>'primary', 'label'=>'Submit')); ?>

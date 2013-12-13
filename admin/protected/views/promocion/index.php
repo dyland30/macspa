@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Promocions',
+	'Lista de Promociones',
 );
 
 $this->menu=array(
-	array('label'=>'Create Promocion', 'url'=>array('create')),
-	array('label'=>'Manage Promocion', 'url'=>array('admin')),
+	array('label'=>'Crear Promoción', 'url'=>array('create')),
+	array('label'=>'Administrar Promoción', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Promocions</h1>
+<h1>Lista de Promociones</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Galeria Nro: <?php echo $model->idgaleria; ?></h1>
+<h1>Galería Nro: <?php echo $model->idgaleria; ?></h1>
 
 <?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
@@ -26,3 +26,20 @@ $this->menu=array(
 		'fch_creacion',
 	),
 )); ?>
+
+<h2>Fotos</h2>
+<h4><?php echo CHtml::link("Nueva Foto",array("Foto/create")) ?></h4>
+<br/>
+<div class="row-fluid">
+    <?php 
+        foreach($model->fotos as $foto){
+    ?>
+    <div class="span2">
+        <p><?php echo  CHtml::link(CHtml::image(Yii::app()->request->baseUrl."/images/fotos/".$foto->img_small,"Foto"),array("Foto/update/$foto->idfoto")); ?></p>
+        <p><?php echo $foto->titulo ?></p>
+    </div> 
+    <?php  
+        }
+    ?>
+    
+</div>

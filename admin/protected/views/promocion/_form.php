@@ -24,8 +24,8 @@
     <?php echo $form->textFieldRow($model, 'titulo', array('size' => 45, 'maxlength' => 45, 'class' => 'span3')); ?>
     <?php echo $form->textAreaRow($model, 'contenido', array('rows' => 6, 'cols' => 50, 'class' => 'span3')); ?>
     <?php echo $form->fileFieldRow($model, 'rutaimagen', array('class' => 'span3')); ?>
-    <?php echo $form->textFieldRow($model, 'fch_inicio', array('class' => 'span3')); ?>
-    <?php echo $form->textFieldRow($model, 'fch_fin', array('class' => 'span3')); ?>
+    <?php echo $form->textFieldRow($model, 'fch_inicio', array('class' => 'span3 dp_fecha')); ?>
+    <?php echo $form->textFieldRow($model, 'fch_fin', array('class' => 'span3 dp_fecha')); ?>
 <?php echo $form->textFieldRow($model, 'orden', array('class' => 'span3')); ?>
         <?php echo $form->textFieldRow($model, 'flg_activo', array('class' => 'span3')); ?>
 
@@ -36,4 +36,9 @@
 
 <?php $this->endWidget(); ?>
 
+     <script type="text/javascript">
+    $("#Promocion_contenido").jqte();
+    
+    </script>
+   
 </div><!-- form -->

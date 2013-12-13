@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Seccions',
+	'Lista de Páginas',
 );
 
 $this->menu=array(
-	array('label'=>'Create Seccion', 'url'=>array('create')),
-	array('label'=>'Manage Seccion', 'url'=>array('admin')),
+	array('label'=>'Crear Páginas', 'url'=>array('create')),
+	array('label'=>'Administrar Páginas', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Seccions</h1>
+<h1>Lista de Páginas</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

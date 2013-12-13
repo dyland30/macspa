@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Seccion', 'url'=>array('index')),
-	array('label'=>'Manage Seccion', 'url'=>array('admin')),
+	array('label'=>'Listar Páginas', 'url'=>array('index')),
+	array('label'=>'Administrar Páginas', 'url'=>array('admin')),
 );
 ?>
 

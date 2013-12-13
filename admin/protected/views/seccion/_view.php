@@ -14,7 +14,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('contenido')); ?>:</b>
-	<?php echo CHtml::encode($data->contenido); ?>
+	<?php echo CHtml::decode($data->contenido); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('div_id')); ?>:</b>

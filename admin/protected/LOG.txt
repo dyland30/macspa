@@ -1,0 +1,890 @@
+Promocion beforeSave 
+Imagen:  
+PromocionController Create 
+Imagen: 9.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Create 
+Imagen: 10.jpg 
+Promocion beforeSave 
+Imagen: 10.jpg 
+Promocion parent::beforeSave 
+Imagen: 10.jpg 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Update 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen: 10.png 
+Promocion parent::beforeSave 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Update 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen: 10.png 
+Promocion parent::beforeSave 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Update 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen: 10.png 
+Promocion parent::beforeSave 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Update 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen: 10.png 
+Promocion parent::beforeSave 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Create 
+Imagen: 11.jpg 
+Promocion beforeSave 
+Imagen: 11.jpg 
+Promocion parent::beforeSave 
+Imagen: 11.jpg 
+PromocionController After Update 
+Imagen: 11.jpg 
+Promocion afterFind 
+Imagen: 11.jpg 
+Promocion afterFind 
+Imagen: 11.jpg 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Update 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen: 10.png 
+Promocion parent::beforeSave 
+Imagen: 10.png 
+PromocionController After Update 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Update 
+Imagen: 7.PNG 
+Promocion beforeSave 
+Imagen: 7.PNG 
+Promocion parent::beforeSave 
+Imagen: 7.PNG 
+PromocionController After Update 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Update 
+Imagen: 2.PNG 
+Promocion beforeSave 
+Imagen: 2.PNG 
+Promocion parent::beforeSave 
+Imagen: 2.PNG 
+PromocionController After Update 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 11.jpg 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen:  
+Promocion parent::beforeSave 
+Imagen:  
+PromocionController Create 
+Imagen: 12.png 
+Promocion beforeSave 
+Imagen: 12.png 
+Promocion parent::beforeSave 
+Imagen: 12.png 
+PromocionController After Update 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 12.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen: 10.png 
+Promocion parent::beforeSave 
+Imagen: 10.png 
+PromocionController Update 
+Imagen: 10.png 
+Promocion beforeSave 
+Imagen: 10.png 
+Promocion parent::beforeSave 
+Imagen: 10.png 
+PromocionController After Update 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen: 1.PNG 
+Promocion afterFind 
+Imagen: 2.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 7.PNG 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen: 10.png 
+Promocion afterFind 
+Imagen:  
+Promocion afterFind 
+Imagen:  

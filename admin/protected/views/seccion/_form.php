@@ -34,5 +34,9 @@
     </div>
 
 <?php $this->endWidget(); ?>
-
+    <script type="text/javascript">
+    $("#Seccion_contenido").jqte();
+    
+    </script>
+    
 </div><!-- form -->

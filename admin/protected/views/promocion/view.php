@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Promocion', 'url'=>array('index')),
-	array('label'=>'Create Promocion', 'url'=>array('create')),
-	array('label'=>'Update Promocion', 'url'=>array('update', 'id'=>$model->idpromocion)),
-	array('label'=>'Delete Promocion', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idpromocion),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Promocion', 'url'=>array('admin')),
+	array('label'=>'Listar Promoción', 'url'=>array('index')),
+	array('label'=>'Crear Promoción', 'url'=>array('create')),
+	array('label'=>'Editar Promoción', 'url'=>array('update', 'id'=>$model->idpromocion)),
+	array('label'=>'Eliminar Promoción', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idpromocion),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Promoción', 'url'=>array('admin')),
 );
 ?>
 
@@ -23,7 +23,11 @@ $this->menu=array(
 	'attributes'=>array(
 		'idpromocion',
 		'titulo',
-		'contenido',
+		array(               // related city displayed as a link
+                'label'=>'Contenido',
+                'type'=>'raw',
+                'value'=>CHtml::decode($model->contenido)
+                ),
 		'imagen',
 		'fch_inicio',
 		'fch_fin',

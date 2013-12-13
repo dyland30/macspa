@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Seccion', 'url'=>array('index')),
-	array('label'=>'Create Seccion', 'url'=>array('create')),
-	array('label'=>'Update Seccion', 'url'=>array('update', 'id'=>$model->idseccion)),
-	array('label'=>'Delete Seccion', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idseccion),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Seccion', 'url'=>array('admin')),
+	array('label'=>'Listar Páginas', 'url'=>array('index')),
+	array('label'=>'Crear Página', 'url'=>array('create')),
+	array('label'=>'Editar Página', 'url'=>array('update', 'id'=>$model->idseccion)),
+	array('label'=>'Eliminar Página', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idseccion),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Páginas', 'url'=>array('admin')),
 );
 ?>
 
@@ -23,7 +23,11 @@ $this->menu=array(
 	'attributes'=>array(
 		'idseccion',
 		'titulo',
-		'contenido',
+		array(               // related city displayed as a link
+                'label'=>'Contenido',
+                'type'=>'raw',
+                'value'=>CHtml::decode($model->contenido)
+                ),
 		'div_id',
 		'flg_activo',
 		'idusuario',

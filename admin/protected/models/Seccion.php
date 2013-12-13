@@ -89,7 +89,7 @@ class Seccion extends CActiveRecord
 
 		$criteria->compare('idseccion',$this->idseccion);
 		$criteria->compare('titulo',$this->titulo,true);
-		$criteria->compare('contenido',$this->contenido,true);
+		$criteria->compare('contenido', $this->contenido,true);
 		$criteria->compare('div_id',$this->div_id,true);
 		$criteria->compare('flg_activo',$this->flg_activo);
 		$criteria->compare('idusuario',$this->idusuario);

@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Seccion', 'url'=>array('index')),
-	array('label'=>'Create Seccion', 'url'=>array('create')),
-	array('label'=>'View Seccion', 'url'=>array('view', 'id'=>$model->idseccion)),
-	array('label'=>'Manage Seccion', 'url'=>array('admin')),
+	array('label'=>'Listar Páginas', 'url'=>array('index')),
+	array('label'=>'Crear Página', 'url'=>array('create')),
+	array('label'=>'Ver Página', 'url'=>array('view', 'id'=>$model->idseccion)),
+	array('label'=>'Administrar Páginas', 'url'=>array('admin')),
 );
 ?>
 

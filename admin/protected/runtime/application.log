@@ -984,3 +984,840 @@ in C:\xampp\htdocs\macspa\admin\index.php (13)
 2013/09/30 22:20:25 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
 in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (123)
 in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/05 20:29:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-2' for key 'PRIMARY'. The SQL statement executed was: insert into promocion_servicio(idpromocion,idservicio,flg_activo,precio_promo) values(1,2,1,150).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (251)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/05 20:36:20 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "C:\xampp\htdocs\macspa\admin\themes\bootstrap\views/site\index.php". A TbHeroUnit widget does not have an endWidget() call.' in C:\xampp\htdocs\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\SiteController.php(32): CController->render('index')
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/macspa/admin/
+---
+2013/12/05 20:36:22 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "C:\xampp\htdocs\macspa\admin\themes\bootstrap\views/site\index.php". A TbHeroUnit widget does not have an endWidget() call.' in C:\xampp\htdocs\yii\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\SiteController.php(32): CController->render('index')
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/macspa/admin/
+---
+2013/12/09 16:47:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`macspa`.`seccion`, CONSTRAINT `fk_seccion_Usuario1` FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `seccion` (`flg_activo`, `titulo`, `contenido`, `div_id`, `idusuario`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\SeccionController.php (73)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/09 16:47:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`macspa`.`seccion`, CONSTRAINT `fk_seccion_Usuario1` FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `seccion` (`flg_activo`, `titulo`, `contenido`, `div_id`, `idusuario`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\SeccionController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SeccionController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('seccion/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/seccion/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/seccion/create
+---
+2013/12/09 17:04:36 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\macspa\admin\protected\views\seccion\view.php(26): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SeccionController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): SeccionController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): SeccionController->renderPartial()
+#5 C:\xampp\htdocs\macspa\admin\protected\controllers\SeccionController.php(56): SeccionController->render()
+#6 unknown(0): SeccionController->actionView()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): SeccionController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SeccionController->filterAccessControl()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): SeccionController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SeccionController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/seccion/2
+in C:\xampp\htdocs\macspa\admin\protected\views\seccion\view.php (26)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\SeccionController.php (56)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/09 17:10:32 [error] [exception.CException] exception 'CException' with message 'Either "name" or "value" must be specified for CDataColumn.' in C:\xampp\htdocs\yii\framework\zii\widgets\grid\CDataColumn.php:84
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(401): CDataColumn->init()
+#1 C:\xampp\htdocs\macspa\admin\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#3 C:\xampp\htdocs\macspa\admin\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): TbGridView->init()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#6 C:\xampp\htdocs\macspa\admin\protected\views\seccion\admin.php(67): CBaseController->widget('bootstrap.widge...', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#11 C:\xampp\htdocs\macspa\admin\protected\controllers\SeccionController.php(143): CController->render('admin', Array)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SeccionController->actionAdmin()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('seccion/admin')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/macspa/admin/index.php/seccion/admin
+---
+2013/12/09 17:11:06 [error] [exception.CException] exception 'CException' with message 'Either "name" or "value" must be specified for CDataColumn.' in C:\xampp\htdocs\yii\framework\zii\widgets\grid\CDataColumn.php:84
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(401): CDataColumn->init()
+#1 C:\xampp\htdocs\macspa\admin\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#3 C:\xampp\htdocs\macspa\admin\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): TbGridView->init()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#6 C:\xampp\htdocs\macspa\admin\protected\views\seccion\admin.php(67): CBaseController->widget('bootstrap.widge...', Array)
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#11 C:\xampp\htdocs\macspa\admin\protected\controllers\SeccionController.php(143): CController->render('admin', Array)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SeccionController->actionAdmin()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('seccion/admin')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/macspa/admin/index.php/seccion/admin
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/seccion/2
+---
+2013/12/09 19:03:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#12 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CListView->init()
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 C:\xampp\htdocs\macspa\admin\protected\views\promocion\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#17 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#20 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(190): CController->render('index', Array)
+#21 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionIndex()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Index')
+#31 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Promocion/Index')
+#32 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/macspa/admin/index.php/Promocion/Index
+HTTP_REFERER=http://localhost:8585/macspa/admin/
+---
+2013/12/09 20:11:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#12 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CListView->init()
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 C:\xampp\htdocs\macspa\admin\protected\views\promocion\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#17 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#20 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(190): CController->render('index', Array)
+#21 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionIndex()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Index')
+#31 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Promocion/Index')
+#32 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/macspa/admin/index.php/Promocion/Index
+---
+2013/12/09 20:37:47 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/09 20:38:11 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/09 20:38:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '11/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (80)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/09 20:38:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '11/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(80): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('promocion/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/promocion/create
+---
+2013/12/10 15:57:17 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 15:57:34 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:01:52 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:01:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '11/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:01:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '11/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('promocion/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/promocion/create
+---
+2013/12/10 16:03:59 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:03:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '10/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:03:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '10/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('promocion/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/promocion/create
+---
+2013/12/10 16:48:41 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:48:41 [error] [php] date_format() expects parameter 1 to be DateTime, integer given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:57:45 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:57:45 [error] [php] date_format() expects parameter 1 to be DateTime, array given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:58:48 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 16:58:48 [error] [php] date_format() expects parameter 1 to be DateTime, integer given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:01:06 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:01:06 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (1386630000) at position 8 (0): Unexpected character' in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55
+Stack trace:
+#0 C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php(55): DateTime->__construct('1386630000')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1071): Promocion->beforeSave()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#3 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): CActiveRecord->save()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('promocion/creat...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/promocion/create
+---
+2013/12/10 17:06:43 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:06:43 [error] [php] date_format() expects parameter 1 to be DateTime, boolean given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:08:12 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:08:12 [error] [php] date_format() expects parameter 1 to be DateTime, boolean given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->update()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(102): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (102)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:09:22 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:09:22 [error] [php] date_format() expects parameter 1 to be DateTime, boolean given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->update()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(102): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (102)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:09:59 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:09:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '20/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:09:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '20/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('promocion/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/promocion/create
+---
+2013/12/10 17:15:40 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:15:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '10/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:15:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '10/12/2013' for column 'fch_inicio' at row 1. The SQL statement executed was: INSERT INTO `promocion` (`flg_activo`, `titulo`, `contenido`, `fch_inicio`, `fch_fin`, `orden`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('promocion/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/promocion/create
+---
+2013/12/10 17:19:20 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:19:20 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\yii\framework\db\schema\CDbColumnSchema.php:146)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:31:07 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:35:09 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (128)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:35:14 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (128)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:36:54 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:39:05 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 17:45:55 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 19:00:57 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 19:02:34 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 20:57:50 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:00:13 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:00:13 [error] [php] log() expects parameter 1 to be double, string given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:01:11 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:01:11 [error] [php] log() expects parameter 1 to be double, string given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:02:26 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:02:26 [error] [php] log() expects parameter 1 to be double, string given (C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): Promocion->insert()
+#1 C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php(82): Promocion->save()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): PromocionController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): PromocionController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): PromocionController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): PromocionController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): PromocionController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\macspa\admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/macspa/admin/index.php/promocion/create
+in C:\xampp\htdocs\macspa\admin\protected\models\Promocion.php (55)
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (82)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:04:37 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:05:39 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:07:51 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:08:16 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (128)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:08:22 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (128)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/10 21:27:42 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (126)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 16:34:07 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (127)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 16:35:04 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 16:38:38 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (127)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 16:49:25 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:14:39 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:19:33 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:21:00 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:22:06 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:23:23 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:23:43 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:25:58 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 17:26:15 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 20:13:19 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 20:18:21 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 23:19:50 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 23:24:35 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 23:25:04 [warning] [application] Failed to set unsafe attribute "rutaimagen" of "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (129)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 23:46:19 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (125)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 23:50:44 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/11 23:51:23 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 00:02:07 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 15:16:55 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 17:05:27 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'fch_creacion' at row 1. La sentencia SQL ejecutada fue: INSERT INTO `foto` (`titulo`, `img_orig`, `img_small`, `fch_creacion`, `idgaleria`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (73)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 17:05:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'fch_creacion' at row 1. The SQL statement executed was: INSERT INTO `foto` (`titulo`, `img_orig`, `img_small`, `fch_creacion`, `idgaleria`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): FotoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('foto/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/foto/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/foto/create
+---
+2013/12/12 17:20:23 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Promocion".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\PromocionController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 17:41:09 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'fch_creacion' at row 1. La sentencia SQL ejecutada fue: INSERT INTO `galeria` (`descripcion`, `fch_creacion`) VALUES (:yp0, :yp1).
+in C:\xampp\htdocs\macspa\admin\protected\controllers\GaleriaController.php (73)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 17:41:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'fch_creacion' at row 1. The SQL statement executed was: INSERT INTO `galeria` (`descripcion`, `fch_creacion`) VALUES (:yp0, :yp1)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\macspa\admin\protected\controllers\GaleriaController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): GaleriaController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('galeria/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\macspa\admin\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/macspa/admin/index.php/galeria/create
+HTTP_REFERER=http://localhost:8585/macspa/admin/index.php/galeria/create
+---
+2013/12/12 18:31:07 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 19:03:07 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (135)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:17:03 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:17:23 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:17:35 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:17:47 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:21:42 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (72)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:33:47 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (135)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:38:31 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (135)
+in C:\xampp\htdocs\macspa\admin\index.php (13)
+2013/12/12 21:38:48 [warning] [application] Error al establecer unsafe al atributo "rutaimagen" de "Foto".
+in C:\xampp\htdocs\macspa\admin\protected\controllers\FotoController.php (135)
+in C:\xampp\htdocs\macspa\admin\index.php (13)

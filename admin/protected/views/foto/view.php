@@ -17,6 +17,8 @@ $this->menu=array(
 ?>
 
 <h1>Foto Nro: <?php echo $model->idfoto; ?></h1>
+<h3></h3>
+<?php echo CHtml::image(Yii::app()->request->baseUrl."/images/fotos/".$model->img_orig,"Foto"); ?>
 
 <?php $this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,

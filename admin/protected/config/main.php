@@ -19,6 +19,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                'application.components.Loguer' 
 	),
 
 	'modules'=>array(

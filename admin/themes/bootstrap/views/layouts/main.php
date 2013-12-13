@@ -11,7 +11,14 @@
 
 	<?php Yii::app()->bootstrap->register(); ?>
         <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/jquery-te-1.4.0.css" />
+        
         <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-te-1.4.0.min.js"></script>
+       
+        
+        
+        
 </head>
 
 <body>
@@ -63,13 +70,19 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> Mac Salón & SPA<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		
 	</div><!-- footer -->
 
 </div><!-- page -->
-
-
+ <script type ="text/javascript">
+    $(document).ready(function(){
+        $(".dp_fecha").datepicker( {'dateFormat' : 'dd/mm/yy', changeMonth: true,
+      changeYear: true});
+        
+        
+    });
+    </script>
 </body>
 </html>
